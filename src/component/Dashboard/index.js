@@ -16,7 +16,26 @@ const styles = theme => ({
     },
     margin: {
         margin: theme.spacing.unit * 1.5,
-    }
+    },
+    formCotainer: {
+        display: 'flex',
+        flexWrap: 'wrap',
+        marginLeft: 40
+    },
+    textField: {
+        width: 120,        
+    },
+    fieldResize: {
+        fontSize: 12,
+    },
+    graphTypeBreakPoint: {
+        [theme.breakpoints.up('xs')]: {
+            marginRight: 10
+        },
+        [theme.breakpoints.down('sm')]: {
+            marginLeft: 40
+        }
+    }  
 });
 
 class Dashboard extends React.Component {
@@ -24,9 +43,13 @@ class Dashboard extends React.Component {
     constructor(props) {
         super(props);
     }
+
     componentWillMount() {
         this.props.requestData()
     }
+    handleSelectChange = event => {
+        this.setState({ [event.target.name]: event.target.value });
+    };
     render() {
         const { classes, result, graphData } = this.props;
         console.log(graphData)
@@ -42,7 +65,8 @@ class Dashboard extends React.Component {
                                 <CardContent>
                                     <Grid container spacing={24}>
                                         <Grid item xs={12}>
-                                            <AreaChartGraph classes={classes} graphData={graphData}/>
+                                            <AreaChartGraph handleSelectChange={this.handleSelectChange} 
+                                            classes={classes} graphData={graphData}/>
                                         </Grid>
                                         <Grid item xs={12}>
                                             tab
