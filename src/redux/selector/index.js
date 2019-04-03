@@ -15,15 +15,16 @@ export const selectGraph = createSelector(
         }
         if(startDate) {
 
-            data = data.filter(item => {
-                console.log(item.rdate +"  "+moment(startDate).format("DD-MM-YYYY"))
-                console.log(moment(item.rdate).diff(moment(moment(startDate).format("DD-MM-YYYY"))))
-                return moment(item.rdate).diff(moment(moment(startDate).format("DD-MM-YYYY"))) >= 0
-                
+            data = data.filter(item => {              
+                const flag = new Date(item.rdate).getTime() >= new Date(moment(startDate).format("MM-DD-YYYY")).getTime();
+                return flag; 
             });
         }
         if(endDate) {
-            data = data.filter(item => moment(item.rdate).diff(moment(moment(endDate).format("DD-MM-YYYY"))) < 0);
+            data = data.filter(item => {              
+                const flag = new Date(item.rdate).getTime() <= new Date(moment(endDate).format("MM-DD-YYYY")).getTime();
+                return flag; 
+            });
         }
         
         return {

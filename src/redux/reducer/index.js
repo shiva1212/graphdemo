@@ -2,13 +2,14 @@ import { LOAD_DATA_RESPONSE, LOAD_DATA_ERROR, GRAPH_START_DATE, GRAPH_END_DATE }
 import Immutable from 'immutable';
 const moment = require('moment');
 
-const NUMBER_OF_NODES = 25;
+const NUMBER_OF_NODES = 10;
 const  types = ['Career', 'Frequency', 'Medical', 'Hobby', 'Journey'];
 
 const dummyData = () => {
     let dummyArray = [];
     for(let i = 0; i < NUMBER_OF_NODES; i++){
-        const rDate  = moment(moment().add("days", (Math.floor(Math.random() * 10) + 1))).format("DD-MM-YYYY");
+        let rnd = Math.floor(Math.random() * 10) + 1;
+        const rDate  = moment().add(rnd, "days");
         dummyArray.push(
             {
                 "name": "Point "+ (i + 1),
@@ -16,11 +17,11 @@ const dummyData = () => {
                 "pv": (Math.floor(Math.random() * 3000) + 1500),
                 "amt": (Math.floor(Math.random() * 2000) + 1500),
                 "type": types[Math.floor(Math.random() * types.length)],
-                "rdate": rDate
+                "rdate": rDate.format("MM-DD-YYYY")
 
             }
         );
-        console.log(rDate)
+        console.log(rDate.format("MM-DD-YYYY"))
     }
     return dummyArray;
 }
