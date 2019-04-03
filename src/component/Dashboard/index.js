@@ -52,8 +52,7 @@ class Dashboard extends React.Component {
     };
     render() {
         const { classes, result, graphData } = this.props;
-        console.log(graphData)
-        
+
         return (
             <div className={classes.root}>
                 <CssBaseline />
@@ -66,7 +65,12 @@ class Dashboard extends React.Component {
                                     <Grid container spacing={24}>
                                         <Grid item xs={12}>
                                             <AreaChartGraph handleSelectChange={this.handleSelectChange} 
-                                            classes={classes} graphData={graphData}/>
+                                            classes={classes} 
+                                            graph={graphData}
+                                            startDate={(e) => this.props.startDate(e.target.value)}
+                                            endDate={(e) => this.props.endDate(e.target.value)}
+                                            graphType={this.props.graphType}
+                                            />
                                         </Grid>
                                         <Grid item xs={12}>
                                             tab

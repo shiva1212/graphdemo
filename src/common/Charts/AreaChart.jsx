@@ -5,16 +5,21 @@ import {
 } from 'recharts';
 
 import Grid from '@material-ui/core/Grid';
-import * as moment  from 'moment';
 
 import MenuItem from '@material-ui/core/MenuItem';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
-export const AreaChartGraph = ({ graphData, classes, handleSelectChange }) => {
+export const AreaChartGraph = ({ 
+    graph, 
+    classes, 
+    handleSelectChange,
+    startDate,
+    endDate
+}) => {
     return (
         <div>
             <ResponsiveContainer width={'100%'} height={270}>
-                <AreaChart data={graphData.toJS()}
+                <AreaChart data={graph.data}
                     margin={{ top: 20, right: 30, left: 0, bottom: 0 }}>
                     <XAxis dataKey="name" tick={{ fontSize: 11 }} />
                     <YAxis tick={{ fontSize: 11 }} />
@@ -22,6 +27,7 @@ export const AreaChartGraph = ({ graphData, classes, handleSelectChange }) => {
                     <Tooltip />
                     <Area type="monotone" dataKey="amt" stroke="#8884d8" strokeOpacity={0.2} fillOpacity={0.2} fill="#8884d8" />
                     <Area type="monotone" dataKey="uv" stroke="#82ca9d" strokeOpacity={0.2} fillOpacity={0.2} fill="#82ca9d" />
+                    <Area type="monotone" dataKey="pv" stroke="#986767" strokeOpacity={0.2} fillOpacity={0.2} fill="#986767" />
                 </AreaChart>
             </ResponsiveContainer>
             <Grid justify="space-between"
@@ -30,6 +36,7 @@ export const AreaChartGraph = ({ graphData, classes, handleSelectChange }) => {
                 <Grid item>
                 <form className={classes.formCotainer} noValidate>
                     <TextField
+                        value={graph.startDate}
                         id="fromDate"
                         type="date"
                         className={classes.textField}
@@ -38,8 +45,10 @@ export const AreaChartGraph = ({ graphData, classes, handleSelectChange }) => {
                                 input: classes.fieldResize,
                             },
                         }}
+                        onChange={startDate}
                     />
                     <TextField
+                        value={graph.endDate}
                         id="toDate"
                         type="date"
                         className={classes.textField}
@@ -48,6 +57,7 @@ export const AreaChartGraph = ({ graphData, classes, handleSelectChange }) => {
                                 input: classes.fieldResize,
                             },
                         }}
+                        onChange={endDate}
                     />
                 </form>
                 </Grid>
@@ -57,10 +67,6 @@ export const AreaChartGraph = ({ graphData, classes, handleSelectChange }) => {
                             <Select
                                 className={classes.fieldResize}
                                 value={10}
-                                SelectProps={{
-                                    name: 'age',
-                                    id: 'age-simple',
-                                }}
                                 onChange={handleSelectChange}
                             >
                                 <MenuItem value="">

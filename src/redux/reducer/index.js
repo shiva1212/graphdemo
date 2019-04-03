@@ -1,55 +1,38 @@
-import { LOAD_DATA_RESPONSE, LOAD_DATA_ERROR } from '../action';
-
+import { LOAD_DATA_RESPONSE, LOAD_DATA_ERROR, GRAPH_START_DATE, GRAPH_END_DATE } from '../action';
 import Immutable from 'immutable';
+const moment = require('moment');
 
+const NUMBER_OF_NODES = 25;
+const  types = ['Career', 'Frequency', 'Medical', 'Hobby', 'Journey'];
 
-const data = [
-    {
-        "name": "Point A",
-        "uv": 4000,
-        "pv": 2400,
-        "amt": 2400
-    },
-    {
-        "name": "Point B",
-        "uv": 3000,
-        "pv": 1398,
-        "amt": 2210
-    },
-    {
-        "name": "Point C",
-        "uv": 2000,
-        "pv": 9800,
-        "amt": 2290
-    },
-    {
-        "name": "Point D",
-        "uv": 2780,
-        "pv": 3908,
-        "amt": 2000
-    },
-    {
-        "name": "Point E",
-        "uv": 1890,
-        "pv": 4800,
-        "amt": 2181
-    },
-    {
-        "name": "Point F",
-        "uv": 2390,
-        "pv": 3800,
-        "amt": 2500
-    },
-    {
-        "name": "Point G",
-        "uv": 3490,
-        "pv": 4300,
-        "amt": 2100
+const dummyData = () => {
+    let dummyArray = [];
+    for(let i = 0; i < NUMBER_OF_NODES; i++){
+        const rDate  = moment(moment().add("days", (Math.floor(Math.random() * 10) + 1))).format("DD-MM-YYYY");
+        dummyArray.push(
+            {
+                "name": "Point "+ (i + 1),
+                "uv": (Math.floor(Math.random() * 5000) + 1500),
+                "pv": (Math.floor(Math.random() * 3000) + 1500),
+                "amt": (Math.floor(Math.random() * 2000) + 1500),
+                "type": types[Math.floor(Math.random() * types.length)],
+                "rdate": rDate
+
+            }
+        );
+        console.log(rDate)
     }
-]
+    return dummyArray;
+}
+const data = dummyData();
 
 const INITIAL_REDDIT_STATE = Immutable.fromJS({
-    graphData: data,
+    graph: {
+        data,
+        start: '',
+        end: '',
+        type: '' 
+    },
     result: [1,2,3, 4],
     error: {
         msg: "Something went wrong!!!",
@@ -60,7 +43,15 @@ const reducer = (state = INITIAL_REDDIT_STATE, action) => {
     switch (action.type) {
         case LOAD_DATA_RESPONSE:
             return state
-                    .set("result", [4,3,2,1])
+                .set("result", [4, 3, 2, 1])
+
+        case GRAPH_START_DATE:
+            return state
+                .setIn(['graph', 'start'], action.startDate)
+
+        case GRAPH_END_DATE:
+            return state
+                .setIn(['graph', 'end'], action.endDate)
         default:
             return state;
     }
