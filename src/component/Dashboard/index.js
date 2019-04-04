@@ -47,12 +47,9 @@ class Dashboard extends React.Component {
     componentWillMount() {
         this.props.requestData()
     }
-    handleSelectChange = event => {
-        this.setState({ [event.target.name]: event.target.value });
-    };
     render() {
         const { classes, result, graphData } = this.props;
-
+        console.log(this.props)
         return (
             <div className={classes.root}>
                 <CssBaseline />
@@ -64,12 +61,14 @@ class Dashboard extends React.Component {
                                 <CardContent>
                                     <Grid container spacing={24}>
                                         <Grid item xs={12}>
-                                            <AreaChartGraph handleSelectChange={this.handleSelectChange} 
+                                            <AreaChartGraph
                                             classes={classes} 
                                             graph={graphData}
                                             startDate={(e) => this.props.startDate(e.target.value)}
                                             endDate={(e) => this.props.endDate(e.target.value)}
+                                            selectGraphType={(e) => this.props.graphType(e.target.value)}
                                             graphType={this.props.graphType}
+                                            graphTypes={this.props.graphTypes}
                                             />
                                         </Grid>
                                         <Grid item xs={12}>

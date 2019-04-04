@@ -3,10 +3,11 @@ import Dashboard from '../../component/Dashboard';
 
 import { startDate, endDate, graphType } from '../../redux/action';
 import { requestData } from '../../redux/thunk';
-import { selectGraph } from '../../redux/selector'
+import { selectGraph, selectGraphType } from '../../redux/selector'
 const mapStateToProps = (state, ownProps) => {
     return {
         graphData: selectGraph(state),
+        graphTypes: selectGraphType(state),
     }
 }
 const mapDispatchToProps = {

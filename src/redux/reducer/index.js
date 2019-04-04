@@ -1,4 +1,8 @@
-import { LOAD_DATA_RESPONSE, LOAD_DATA_ERROR, GRAPH_START_DATE, GRAPH_END_DATE } from '../action';
+import { LOAD_DATA_RESPONSE, 
+    LOAD_DATA_ERROR, GRAPH_START_DATE, 
+    GRAPH_END_DATE,
+    GRAPH_TYPE
+} from '../action';
 import Immutable from 'immutable';
 const moment = require('moment');
 
@@ -32,7 +36,7 @@ const INITIAL_REDDIT_STATE = Immutable.fromJS({
         data,
         start: '',
         end: '',
-        type: '' 
+        type: 'none' 
     },
     result: [1,2,3, 4],
     error: {
@@ -43,7 +47,6 @@ const INITIAL_REDDIT_STATE = Immutable.fromJS({
 const reducer = (state = INITIAL_REDDIT_STATE, action) => {
     switch (action.type) {
         case LOAD_DATA_RESPONSE:
-            console.log('RESPONSE DATA')
             return state
                 .set("result", [4, 3, 2, 1])
 
@@ -54,6 +57,10 @@ const reducer = (state = INITIAL_REDDIT_STATE, action) => {
         case GRAPH_END_DATE:
             return state
                 .setIn(['graph', 'end'], action.endDate)
+
+        case GRAPH_TYPE:
+                return state
+                    .setIn(['graph', 'type'], action.graphType)
         default:
             return state;
     }

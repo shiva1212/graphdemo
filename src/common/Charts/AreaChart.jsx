@@ -12,10 +12,12 @@ import Select from '@material-ui/core/Select';
 export const AreaChartGraph = ({ 
     graph, 
     classes, 
-    handleSelectChange,
+    selectGraphType,
     startDate,
-    endDate
+    endDate,
+    graphTypes
 }) => {
+    console.log(graph.type)
     return (
         <div>
             <ResponsiveContainer width={'100%'} height={270}>
@@ -66,13 +68,14 @@ export const AreaChartGraph = ({
                         <FormControl className={classes.textField}>
                             <Select
                                 className={classes.fieldResize}
-                                value={10}
-                                onChange={handleSelectChange}
+                                value={graph.type}
+                                onChange={selectGraphType}
                             >
-                                <MenuItem value="">
+                                <MenuItem value="none">
                                     <em>None</em>
                                 </MenuItem>
-                                <MenuItem value={10}>Frequency</MenuItem>
+                                {graphTypes && graphTypes.map((item, index) => <MenuItem key={index} value={item}>{item}</MenuItem>)}
+                                
                             </Select>
                         </FormControl>
                     </div>
