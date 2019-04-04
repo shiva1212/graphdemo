@@ -43,6 +43,7 @@ const INITIAL_REDDIT_STATE = Immutable.fromJS({
 const reducer = (state = INITIAL_REDDIT_STATE, action) => {
     switch (action.type) {
         case LOAD_DATA_RESPONSE:
+            console.log('RESPONSE DATA')
             return state
                 .set("result", [4, 3, 2, 1])
 

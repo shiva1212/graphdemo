@@ -1,8 +1,8 @@
 import { connect } from 'react-redux';
 import Dashboard from '../../component/Dashboard';
 
-import { requestData, startDate, endDate, graphType } from '../../redux/action';
-
+import { startDate, endDate, graphType } from '../../redux/action';
+import { requestData } from '../../redux/thunk';
 import { selectGraph } from '../../redux/selector'
 const mapStateToProps = (state, ownProps) => {
     return {
