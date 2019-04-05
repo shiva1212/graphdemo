@@ -6,17 +6,17 @@ import { LOAD_DATA_RESPONSE,
 import Immutable from 'immutable';
 const moment = require('moment');
 
-const NUMBER_OF_NODES = 10;
+const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
 const  types = ['Career', 'Frequency', 'Medical', 'Hobby', 'Journey'];
 
 const dummyData = () => {
     let dummyArray = [];
-    for(let i = 0; i < NUMBER_OF_NODES; i++){
+    for(let i = 0; i < MONTHS.length; i++){
         let rnd = Math.floor(Math.random() * 10) + 1;
         const rDate  = moment().add(rnd, "days");
         dummyArray.push(
             {
-                "name": "Point "+ (i + 1),
+                "name": MONTHS[i],
                 "uv": (Math.floor(Math.random() * 5000) + 1500),
                 "pv": (Math.floor(Math.random() * 3000) + 1500),
                 "amt": (Math.floor(Math.random() * 2000) + 1500),
