@@ -75,7 +75,6 @@ export const AreaChartGraph = ({
                                     <em>None</em>
                                 </MenuItem>
                                 {graphTypes && graphTypes.map((item, index) => <MenuItem key={index} value={item}>{item}</MenuItem>)}
-                                
                             </Select>
                         </FormControl>
                     </div>

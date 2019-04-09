@@ -1,0 +1,100 @@
+{
+    "mockData": [
+        {
+            "name": "Jan",
+            "uv": 4590,
+            "pv": 1786,
+            "amt": 1866,
+            "type": "Medical",
+            "rdate": ""
+        },
+        {
+            "name": "Feb",
+            "uv": 1564,
+            "pv": 2367,
+            "amt": 1974,
+            "type": "Frequency",
+            "rdate": ""
+        },
+        {
+            "name": "Mar",
+            "uv": 4219,
+            "pv": 2396,
+            "amt": 3033,
+            "type": "Career",
+            "rdate": ""
+        },
+        {
+            "name": "Apr",
+            "uv": 5770,
+            "pv": 2961,
+            "amt": 2336,
+            "type": "Hobby",
+            "rdate": ""
+        },
+        {
+            "name": "May",
+            "uv": 3169,
+            "pv": 1666,
+            "amt": 2798,
+            "type": "Journey",
+            "rdate": ""
+        },
+        {
+            "name": "Jun",
+            "uv": 4464,
+            "pv": 2960,
+            "amt": 1654,
+            "type": "Career",
+            "rdate": ""
+        },
+        {
+            "name": "Jul",
+            "uv": 3268,
+            "pv": 1661,
+            "amt": 2513,
+            "type": "Medical",
+            "rdate": ""
+        },
+        {
+            "name": "Aug",
+            "uv": 5150,
+            "pv": 1716,
+            "amt": 2658,
+            "type": "Journey",
+            "rdate": ""
+        },
+        {
+            "name": "Sept",
+            "uv": 5464,
+            "pv": 4161,
+            "amt": 3156,
+            "type": "Frequency",
+            "rdate": ""
+        },
+        {
+            "name": "Oct",
+            "uv": 2143,
+            "pv": 3693,
+            "amt": 3154,
+            "type": "Medical",
+            "rdate": ""
+        },
+        {
+            "name": "Nov",
+            "uv": 3573,
+            "pv": 3795,
+            "amt": 2511,
+            "type": "Career",
+            "rdate": ""
+        },
+        {
+            "name": "Dec",
+            "uv": 3046,
+            "pv": 3401,
+            "amt": 1641,
+            "type": "Frequency",
+            "rdate": ""
+        }
+    ]
+}

@@ -4,36 +4,10 @@ import { LOAD_DATA_RESPONSE,
     GRAPH_TYPE
 } from '../action';
 import Immutable from 'immutable';
-const moment = require('moment');
-
-const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
-const  types = ['Career', 'Frequency', 'Medical', 'Hobby', 'Journey'];
-
-const dummyData = () => {
-    let dummyArray = [];
-    for(let i = 0; i < MONTHS.length; i++){
-        let rnd = Math.floor(Math.random() * 10) + 1;
-        const rDate  = moment().add(rnd, "days");
-        dummyArray.push(
-            {
-                "name": MONTHS[i],
-                "uv": (Math.floor(Math.random() * 5000) + 1500),
-                "pv": (Math.floor(Math.random() * 3000) + 1500),
-                "amt": (Math.floor(Math.random() * 2000) + 1500),
-                "type": types[Math.floor(Math.random() * types.length)],
-                "rdate": rDate.format("MM-DD-YYYY")
-
-            }
-        );
-        console.log(rDate.format("MM-DD-YYYY"))
-    }
-    return dummyArray;
-}
-const data = dummyData();
 
 const INITIAL_REDDIT_STATE = Immutable.fromJS({
     graph: {
-        data,
+        data: [],
         start: '',
         end: '',
         type: 'none' 
@@ -47,8 +21,9 @@ const INITIAL_REDDIT_STATE = Immutable.fromJS({
 const reducer = (state = INITIAL_REDDIT_STATE, action) => {
     switch (action.type) {
         case LOAD_DATA_RESPONSE:
+            console.log(action.data, " asdfas")
             return state
-                .set("result", [4, 3, 2, 1])
+                .setIn(["graph", "data"], Immutable.fromJS(action.data))
 
         case GRAPH_START_DATE:
             return state

@@ -10,6 +10,8 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import { AreaChartGraph } from '../../common/Charts/AreaChart';
 
+import Tabs from '../../common/tabs';
+
 const styles = theme => ({
     grow: {
         flexGrow: 1,
@@ -47,6 +49,7 @@ class Dashboard extends React.Component {
     componentWillMount() {
         this.props.requestData()
     }
+
     render() {
         const { classes, result, graphData } = this.props;
         console.log(this.props)
@@ -72,7 +75,7 @@ class Dashboard extends React.Component {
                                             />
                                         </Grid>
                                         <Grid item xs={12}>
-                                            tab
+                                            <Tabs />
                                         </Grid>
                                     </Grid>
                                 </CardContent>
