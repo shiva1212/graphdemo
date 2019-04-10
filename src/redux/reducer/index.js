@@ -1,7 +1,9 @@
-import { LOAD_DATA_RESPONSE, 
-    LOAD_DATA_ERROR, GRAPH_START_DATE, 
+import {
+    LOAD_DATA_RESPONSE,
+    LOAD_DATA_ERROR, GRAPH_START_DATE,
     GRAPH_END_DATE,
-    GRAPH_TYPE
+    GRAPH_TYPE,
+    LOAD_ORGANISATION_RESPONSE
 } from '../action';
 import Immutable from 'immutable';
 
@@ -10,9 +12,10 @@ const INITIAL_REDDIT_STATE = Immutable.fromJS({
         data: [],
         start: '',
         end: '',
-        type: 'none' 
+        type: 'none'
     },
-    result: [1,2,3, 4],
+    organisation: [],
+    result: [1, 2, 3, 4],
     error: {
         msg: "Something went wrong!!!",
         isError: false
@@ -21,9 +24,12 @@ const INITIAL_REDDIT_STATE = Immutable.fromJS({
 const reducer = (state = INITIAL_REDDIT_STATE, action) => {
     switch (action.type) {
         case LOAD_DATA_RESPONSE:
-            console.log(action.data, " asdfas")
             return state
                 .setIn(["graph", "data"], Immutable.fromJS(action.data))
+
+        case LOAD_ORGANISATION_RESPONSE:
+            return state
+                .set("organisation", Immutable.fromJS(action.data))
 
         case GRAPH_START_DATE:
             return state
@@ -34,8 +40,8 @@ const reducer = (state = INITIAL_REDDIT_STATE, action) => {
                 .setIn(['graph', 'end'], action.endDate)
 
         case GRAPH_TYPE:
-                return state
-                    .setIn(['graph', 'type'], action.graphType)
+            return state
+                .setIn(['graph', 'type'], action.graphType)
         default:
             return state;
     }

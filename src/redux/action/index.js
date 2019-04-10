@@ -4,6 +4,7 @@ export const LOAD_DATA_ERROR = "LOAD_DATA_ERROR";
 export const GRAPH_START_DATE = "GRAPH_START_DATE";
 export const GRAPH_END_DATE = "GRAPH_END_DATE";
 export const GRAPH_TYPE = "GRAPH_TYPE";
+export const LOAD_ORGANISATION_RESPONSE = "LOAD_ORGANISATION_RESPONSE";
 
 export const requestData = (data) => ({
     type: LOAD_DATA_RESPONSE,

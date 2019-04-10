@@ -2,6 +2,7 @@ import { createSelector } from 'reselect';
 const moment = require('moment');
 
 const graphSelector = state => state.get('graph')
+const organisationSelector = state => state.get('organisation')
 
 export const selectGraphType = createSelector(
     graphSelector,
@@ -18,6 +19,13 @@ export const selectGraphType = createSelector(
     }
 )
 
+export const selectOrganisation = createSelector(
+    organisationSelector,
+    (org) => {
+        
+        return org.toJS();
+    }
+)
 
 export const selectGraph = createSelector(
     graphSelector,

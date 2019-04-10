@@ -11,6 +11,7 @@ import CardContent from '@material-ui/core/CardContent';
 import { AreaChartGraph } from '../../common/Charts/AreaChart';
 
 import Tabs from '../../common/tabs';
+import EnhancedTable from '../EnhancedTable';
 
 const styles = theme => ({
     grow: {
@@ -25,7 +26,7 @@ const styles = theme => ({
         marginLeft: 40
     },
     textField: {
-        width: 120,        
+        width: 120,
     },
     fieldResize: {
         fontSize: 12,
@@ -37,7 +38,7 @@ const styles = theme => ({
         [theme.breakpoints.down('sm')]: {
             marginLeft: 40
         }
-    }  
+    }
 });
 
 class Dashboard extends React.Component {
@@ -65,13 +66,13 @@ class Dashboard extends React.Component {
                                     <Grid container spacing={24}>
                                         <Grid item xs={12}>
                                             <AreaChartGraph
-                                            classes={classes} 
-                                            graph={graphData}
-                                            startDate={(e) => this.props.startDate(e.target.value)}
-                                            endDate={(e) => this.props.endDate(e.target.value)}
-                                            selectGraphType={(e) => this.props.graphType(e.target.value)}
-                                            graphType={this.props.graphType}
-                                            graphTypes={this.props.graphTypes}
+                                                classes={classes}
+                                                graph={graphData}
+                                                startDate={(e) => this.props.startDate(e.target.value)}
+                                                endDate={(e) => this.props.endDate(e.target.value)}
+                                                selectGraphType={(e) => this.props.graphType(e.target.value)}
+                                                graphType={this.props.graphType}
+                                                graphTypes={this.props.graphTypes}
                                             />
                                         </Grid>
                                         <Grid item xs={12}>
@@ -91,7 +92,7 @@ class Dashboard extends React.Component {
                     </Grid>
                     <Grid container spacing={24}>
                         <Grid item xs={12}>
-                            adsdf
+                            <EnhancedTable {...this.props} />
                     </Grid>
                     </Grid>
                 </div>

@@ -2,99 +2,2923 @@
     "mockData": [
         {
             "name": "Jan",
-            "uv": 4590,
-            "pv": 1786,
-            "amt": 1866,
+            "uv": 5933,
+            "pv": 2713,
+            "amt": 1709,
+            "type": "Frequency",
+            "rdate": "12-31-2018"
+        },
+        {
+            "name": "Jan",
+            "uv": 3322,
+            "pv": 4037,
+            "amt": 1769,
+            "type": "Journey",
+            "rdate": "01-01-2019"
+        },
+        {
+            "name": "Jan",
+            "uv": 2487,
+            "pv": 2202,
+            "amt": 1591,
             "type": "Medical",
-            "rdate": ""
+            "rdate": "01-02-2019"
+        },
+        {
+            "name": "Jan",
+            "uv": 3140,
+            "pv": 1835,
+            "amt": 2740,
+            "type": "Frequency",
+            "rdate": "01-03-2019"
+        },
+        {
+            "name": "Jan",
+            "uv": 5563,
+            "pv": 2672,
+            "amt": 1734,
+            "type": "Journey",
+            "rdate": "01-04-2019"
+        },
+        {
+            "name": "Jan",
+            "uv": 4742,
+            "pv": 4379,
+            "amt": 3060,
+            "type": "Journey",
+            "rdate": "01-05-2019"
+        },
+        {
+            "name": "Jan",
+            "uv": 5385,
+            "pv": 3836,
+            "amt": 2015,
+            "type": "Career",
+            "rdate": "01-06-2019"
+        },
+        {
+            "name": "Jan",
+            "uv": 4298,
+            "pv": 2877,
+            "amt": 2435,
+            "type": "Hobby",
+            "rdate": "01-07-2019"
+        },
+        {
+            "name": "Jan",
+            "uv": 5696,
+            "pv": 3959,
+            "amt": 2936,
+            "type": "Medical",
+            "rdate": "01-08-2019"
+        },
+        {
+            "name": "Jan",
+            "uv": 3165,
+            "pv": 3986,
+            "amt": 2866,
+            "type": "Medical",
+            "rdate": "01-09-2019"
+        },
+        {
+            "name": "Jan",
+            "uv": 1903,
+            "pv": 1874,
+            "amt": 1599,
+            "type": "Journey",
+            "rdate": "01-10-2019"
+        },
+        {
+            "name": "Jan",
+            "uv": 3702,
+            "pv": 3209,
+            "amt": 2970,
+            "type": "Journey",
+            "rdate": "01-11-2019"
+        },
+        {
+            "name": "Jan",
+            "uv": 3291,
+            "pv": 2415,
+            "amt": 2883,
+            "type": "Medical",
+            "rdate": "01-12-2019"
+        },
+        {
+            "name": "Jan",
+            "uv": 4201,
+            "pv": 3501,
+            "amt": 2859,
+            "type": "Frequency",
+            "rdate": "01-13-2019"
+        },
+        {
+            "name": "Jan",
+            "uv": 4308,
+            "pv": 1748,
+            "amt": 3154,
+            "type": "Hobby",
+            "rdate": "01-14-2019"
+        },
+        {
+            "name": "Jan",
+            "uv": 5532,
+            "pv": 1858,
+            "amt": 2994,
+            "type": "Hobby",
+            "rdate": "01-15-2019"
+        },
+        {
+            "name": "Jan",
+            "uv": 2306,
+            "pv": 3362,
+            "amt": 1742,
+            "type": "Journey",
+            "rdate": "01-16-2019"
+        },
+        {
+            "name": "Jan",
+            "uv": 2763,
+            "pv": 3766,
+            "amt": 3086,
+            "type": "Medical",
+            "rdate": "01-17-2019"
+        },
+        {
+            "name": "Jan",
+            "uv": 6253,
+            "pv": 2822,
+            "amt": 2095,
+            "type": "Medical",
+            "rdate": "01-18-2019"
+        },
+        {
+            "name": "Jan",
+            "uv": 2488,
+            "pv": 4496,
+            "amt": 1658,
+            "type": "Journey",
+            "rdate": "01-19-2019"
+        },
+        {
+            "name": "Jan",
+            "uv": 2922,
+            "pv": 2587,
+            "amt": 2283,
+            "type": "Journey",
+            "rdate": "01-20-2019"
+        },
+        {
+            "name": "Jan",
+            "uv": 2130,
+            "pv": 4231,
+            "amt": 2954,
+            "type": "Medical",
+            "rdate": "01-21-2019"
+        },
+        {
+            "name": "Jan",
+            "uv": 1744,
+            "pv": 2054,
+            "amt": 2076,
+            "type": "Career",
+            "rdate": "01-22-2019"
+        },
+        {
+            "name": "Jan",
+            "uv": 5795,
+            "pv": 2369,
+            "amt": 2494,
+            "type": "Medical",
+            "rdate": "01-23-2019"
+        },
+        {
+            "name": "Jan",
+            "uv": 2404,
+            "pv": 1759,
+            "amt": 1908,
+            "type": "Frequency",
+            "rdate": "01-24-2019"
+        },
+        {
+            "name": "Jan",
+            "uv": 4105,
+            "pv": 2969,
+            "amt": 3226,
+            "type": "Medical",
+            "rdate": "01-25-2019"
+        },
+        {
+            "name": "Jan",
+            "uv": 2681,
+            "pv": 4343,
+            "amt": 2983,
+            "type": "Frequency",
+            "rdate": "01-26-2019"
+        },
+        {
+            "name": "Jan",
+            "uv": 3784,
+            "pv": 2329,
+            "amt": 3056,
+            "type": "Career",
+            "rdate": "01-27-2019"
+        },
+        {
+            "name": "Jan",
+            "uv": 5209,
+            "pv": 3765,
+            "amt": 3069,
+            "type": "Hobby",
+            "rdate": "01-28-2019"
+        },
+        {
+            "name": "Jan",
+            "uv": 3012,
+            "pv": 3489,
+            "amt": 2668,
+            "type": "Journey",
+            "rdate": "01-29-2019"
+        },
+        {
+            "name": "Jan",
+            "uv": 6113,
+            "pv": 4092,
+            "amt": 2879,
+            "type": "Career",
+            "rdate": "01-30-2019"
         },
         {
             "name": "Feb",
-            "uv": 1564,
-            "pv": 2367,
-            "amt": 1974,
+            "uv": 2311,
+            "pv": 2439,
+            "amt": 2372,
+            "type": "Career",
+            "rdate": "01-31-2019"
+        },
+        {
+            "name": "Feb",
+            "uv": 6331,
+            "pv": 2505,
+            "amt": 1617,
+            "type": "Journey",
+            "rdate": "02-01-2019"
+        },
+        {
+            "name": "Feb",
+            "uv": 2823,
+            "pv": 1516,
+            "amt": 3488,
+            "type": "Career",
+            "rdate": "02-02-2019"
+        },
+        {
+            "name": "Feb",
+            "uv": 5057,
+            "pv": 3393,
+            "amt": 2526,
+            "type": "Career",
+            "rdate": "02-03-2019"
+        },
+        {
+            "name": "Feb",
+            "uv": 2881,
+            "pv": 4492,
+            "amt": 2710,
+            "type": "Hobby",
+            "rdate": "02-04-2019"
+        },
+        {
+            "name": "Feb",
+            "uv": 5746,
+            "pv": 1726,
+            "amt": 2145,
+            "type": "Career",
+            "rdate": "02-05-2019"
+        },
+        {
+            "name": "Feb",
+            "uv": 6196,
+            "pv": 2914,
+            "amt": 3140,
+            "type": "Career",
+            "rdate": "02-06-2019"
+        },
+        {
+            "name": "Feb",
+            "uv": 5692,
+            "pv": 2611,
+            "amt": 2109,
+            "type": "Medical",
+            "rdate": "02-07-2019"
+        },
+        {
+            "name": "Feb",
+            "uv": 1745,
+            "pv": 2647,
+            "amt": 1916,
             "type": "Frequency",
-            "rdate": ""
+            "rdate": "02-08-2019"
+        },
+        {
+            "name": "Feb",
+            "uv": 6451,
+            "pv": 4018,
+            "amt": 2407,
+            "type": "Career",
+            "rdate": "02-09-2019"
+        },
+        {
+            "name": "Feb",
+            "uv": 4892,
+            "pv": 2242,
+            "amt": 2254,
+            "type": "Medical",
+            "rdate": "02-10-2019"
+        },
+        {
+            "name": "Feb",
+            "uv": 4686,
+            "pv": 2662,
+            "amt": 1711,
+            "type": "Frequency",
+            "rdate": "02-11-2019"
+        },
+        {
+            "name": "Feb",
+            "uv": 1703,
+            "pv": 2811,
+            "amt": 3165,
+            "type": "Career",
+            "rdate": "02-12-2019"
+        },
+        {
+            "name": "Feb",
+            "uv": 5470,
+            "pv": 4346,
+            "amt": 2552,
+            "type": "Medical",
+            "rdate": "02-13-2019"
+        },
+        {
+            "name": "Feb",
+            "uv": 4185,
+            "pv": 4158,
+            "amt": 2976,
+            "type": "Medical",
+            "rdate": "02-14-2019"
+        },
+        {
+            "name": "Feb",
+            "uv": 2010,
+            "pv": 3118,
+            "amt": 2732,
+            "type": "Frequency",
+            "rdate": "02-15-2019"
+        },
+        {
+            "name": "Feb",
+            "uv": 5426,
+            "pv": 3171,
+            "amt": 2842,
+            "type": "Medical",
+            "rdate": "02-16-2019"
+        },
+        {
+            "name": "Feb",
+            "uv": 5668,
+            "pv": 4146,
+            "amt": 2611,
+            "type": "Frequency",
+            "rdate": "02-17-2019"
+        },
+        {
+            "name": "Feb",
+            "uv": 3193,
+            "pv": 3633,
+            "amt": 3417,
+            "type": "Frequency",
+            "rdate": "02-18-2019"
+        },
+        {
+            "name": "Feb",
+            "uv": 5141,
+            "pv": 2460,
+            "amt": 3491,
+            "type": "Medical",
+            "rdate": "02-19-2019"
+        },
+        {
+            "name": "Feb",
+            "uv": 5412,
+            "pv": 1633,
+            "amt": 3346,
+            "type": "Medical",
+            "rdate": "02-20-2019"
+        },
+        {
+            "name": "Feb",
+            "uv": 5034,
+            "pv": 3407,
+            "amt": 2935,
+            "type": "Frequency",
+            "rdate": "02-21-2019"
+        },
+        {
+            "name": "Feb",
+            "uv": 2471,
+            "pv": 2350,
+            "amt": 2805,
+            "type": "Medical",
+            "rdate": "02-22-2019"
+        },
+        {
+            "name": "Feb",
+            "uv": 5734,
+            "pv": 1963,
+            "amt": 1874,
+            "type": "Hobby",
+            "rdate": "02-23-2019"
+        },
+        {
+            "name": "Feb",
+            "uv": 5450,
+            "pv": 2323,
+            "amt": 3059,
+            "type": "Career",
+            "rdate": "02-24-2019"
+        },
+        {
+            "name": "Feb",
+            "uv": 2228,
+            "pv": 3479,
+            "amt": 2878,
+            "type": "Frequency",
+            "rdate": "02-25-2019"
+        },
+        {
+            "name": "Feb",
+            "uv": 2119,
+            "pv": 1930,
+            "amt": 1677,
+            "type": "Medical",
+            "rdate": "02-26-2019"
+        },
+        {
+            "name": "Feb",
+            "uv": 5070,
+            "pv": 2657,
+            "amt": 2203,
+            "type": "Career",
+            "rdate": "02-27-2019"
         },
         {
             "name": "Mar",
-            "uv": 4219,
-            "pv": 2396,
-            "amt": 3033,
+            "uv": 4232,
+            "pv": 3173,
+            "amt": 1661,
+            "type": "Hobby",
+            "rdate": "02-28-2019"
+        },
+        {
+            "name": "Mar",
+            "uv": 2154,
+            "pv": 1939,
+            "amt": 2417,
+            "type": "Journey",
+            "rdate": "03-01-2019"
+        },
+        {
+            "name": "Mar",
+            "uv": 1527,
+            "pv": 3915,
+            "amt": 1667,
+            "type": "Hobby",
+            "rdate": "03-02-2019"
+        },
+        {
+            "name": "Mar",
+            "uv": 4252,
+            "pv": 3345,
+            "amt": 1565,
             "type": "Career",
-            "rdate": ""
+            "rdate": "03-03-2019"
+        },
+        {
+            "name": "Mar",
+            "uv": 4825,
+            "pv": 2742,
+            "amt": 3437,
+            "type": "Journey",
+            "rdate": "03-04-2019"
+        },
+        {
+            "name": "Mar",
+            "uv": 3322,
+            "pv": 2679,
+            "amt": 1714,
+            "type": "Career",
+            "rdate": "03-05-2019"
+        },
+        {
+            "name": "Mar",
+            "uv": 3404,
+            "pv": 2650,
+            "amt": 2555,
+            "type": "Medical",
+            "rdate": "03-06-2019"
+        },
+        {
+            "name": "Mar",
+            "uv": 4163,
+            "pv": 4280,
+            "amt": 1714,
+            "type": "Frequency",
+            "rdate": "03-07-2019"
+        },
+        {
+            "name": "Mar",
+            "uv": 5022,
+            "pv": 2137,
+            "amt": 2070,
+            "type": "Hobby",
+            "rdate": "03-08-2019"
+        },
+        {
+            "name": "Mar",
+            "uv": 4434,
+            "pv": 3765,
+            "amt": 1623,
+            "type": "Journey",
+            "rdate": "03-09-2019"
+        },
+        {
+            "name": "Mar",
+            "uv": 3860,
+            "pv": 4087,
+            "amt": 2811,
+            "type": "Medical",
+            "rdate": "03-10-2019"
+        },
+        {
+            "name": "Mar",
+            "uv": 2092,
+            "pv": 2189,
+            "amt": 1884,
+            "type": "Hobby",
+            "rdate": "03-11-2019"
+        },
+        {
+            "name": "Mar",
+            "uv": 1729,
+            "pv": 4293,
+            "amt": 1997,
+            "type": "Frequency",
+            "rdate": "03-12-2019"
+        },
+        {
+            "name": "Mar",
+            "uv": 1687,
+            "pv": 1604,
+            "amt": 2842,
+            "type": "Journey",
+            "rdate": "03-13-2019"
+        },
+        {
+            "name": "Mar",
+            "uv": 2491,
+            "pv": 1859,
+            "amt": 1532,
+            "type": "Hobby",
+            "rdate": "03-14-2019"
+        },
+        {
+            "name": "Mar",
+            "uv": 5839,
+            "pv": 2663,
+            "amt": 2499,
+            "type": "Hobby",
+            "rdate": "03-15-2019"
+        },
+        {
+            "name": "Mar",
+            "uv": 2803,
+            "pv": 2782,
+            "amt": 3383,
+            "type": "Career",
+            "rdate": "03-16-2019"
+        },
+        {
+            "name": "Mar",
+            "uv": 3431,
+            "pv": 2290,
+            "amt": 2995,
+            "type": "Career",
+            "rdate": "03-17-2019"
+        },
+        {
+            "name": "Mar",
+            "uv": 2561,
+            "pv": 3059,
+            "amt": 1562,
+            "type": "Medical",
+            "rdate": "03-18-2019"
+        },
+        {
+            "name": "Mar",
+            "uv": 6413,
+            "pv": 2376,
+            "amt": 1671,
+            "type": "Medical",
+            "rdate": "03-19-2019"
+        },
+        {
+            "name": "Mar",
+            "uv": 4942,
+            "pv": 1729,
+            "amt": 1990,
+            "type": "Frequency",
+            "rdate": "03-20-2019"
+        },
+        {
+            "name": "Mar",
+            "uv": 5749,
+            "pv": 3456,
+            "amt": 3463,
+            "type": "Hobby",
+            "rdate": "03-21-2019"
+        },
+        {
+            "name": "Mar",
+            "uv": 4777,
+            "pv": 2562,
+            "amt": 2217,
+            "type": "Career",
+            "rdate": "03-22-2019"
+        },
+        {
+            "name": "Mar",
+            "uv": 4098,
+            "pv": 3631,
+            "amt": 2804,
+            "type": "Career",
+            "rdate": "03-23-2019"
+        },
+        {
+            "name": "Mar",
+            "uv": 4022,
+            "pv": 2725,
+            "amt": 3231,
+            "type": "Medical",
+            "rdate": "03-24-2019"
+        },
+        {
+            "name": "Mar",
+            "uv": 3680,
+            "pv": 1857,
+            "amt": 3478,
+            "type": "Journey",
+            "rdate": "03-25-2019"
+        },
+        {
+            "name": "Mar",
+            "uv": 2340,
+            "pv": 3938,
+            "amt": 1889,
+            "type": "Journey",
+            "rdate": "03-26-2019"
+        },
+        {
+            "name": "Mar",
+            "uv": 6240,
+            "pv": 1976,
+            "amt": 1726,
+            "type": "Frequency",
+            "rdate": "03-27-2019"
+        },
+        {
+            "name": "Mar",
+            "uv": 5423,
+            "pv": 2804,
+            "amt": 1524,
+            "type": "Career",
+            "rdate": "03-28-2019"
+        },
+        {
+            "name": "Mar",
+            "uv": 2459,
+            "pv": 2904,
+            "amt": 1921,
+            "type": "Frequency",
+            "rdate": "03-29-2019"
+        },
+        {
+            "name": "Mar",
+            "uv": 2455,
+            "pv": 1860,
+            "amt": 2643,
+            "type": "Frequency",
+            "rdate": "03-30-2019"
         },
         {
             "name": "Apr",
-            "uv": 5770,
-            "pv": 2961,
-            "amt": 2336,
+            "uv": 4997,
+            "pv": 1621,
+            "amt": 2801,
+            "type": "Frequency",
+            "rdate": "03-31-2019"
+        },
+        {
+            "name": "Apr",
+            "uv": 5958,
+            "pv": 2598,
+            "amt": 2903,
+            "type": "Medical",
+            "rdate": "04-01-2019"
+        },
+        {
+            "name": "Apr",
+            "uv": 1755,
+            "pv": 2293,
+            "amt": 1507,
+            "type": "Journey",
+            "rdate": "04-02-2019"
+        },
+        {
+            "name": "Apr",
+            "uv": 1818,
+            "pv": 1751,
+            "amt": 3248,
+            "type": "Medical",
+            "rdate": "04-03-2019"
+        },
+        {
+            "name": "Apr",
+            "uv": 5281,
+            "pv": 2610,
+            "amt": 2689,
+            "type": "Career",
+            "rdate": "04-04-2019"
+        },
+        {
+            "name": "Apr",
+            "uv": 3301,
+            "pv": 1898,
+            "amt": 1925,
+            "type": "Career",
+            "rdate": "04-05-2019"
+        },
+        {
+            "name": "Apr",
+            "uv": 4349,
+            "pv": 2118,
+            "amt": 2849,
+            "type": "Journey",
+            "rdate": "04-06-2019"
+        },
+        {
+            "name": "Apr",
+            "uv": 4512,
+            "pv": 3850,
+            "amt": 3459,
+            "type": "Journey",
+            "rdate": "04-07-2019"
+        },
+        {
+            "name": "Apr",
+            "uv": 4770,
+            "pv": 4385,
+            "amt": 1511,
+            "type": "Frequency",
+            "rdate": "04-08-2019"
+        },
+        {
+            "name": "Apr",
+            "uv": 5260,
+            "pv": 2125,
+            "amt": 2528,
+            "type": "Medical",
+            "rdate": "04-09-2019"
+        },
+        {
+            "name": "Apr",
+            "uv": 4055,
+            "pv": 4158,
+            "amt": 1666,
+            "type": "Frequency",
+            "rdate": "04-10-2019"
+        },
+        {
+            "name": "Apr",
+            "uv": 1638,
+            "pv": 3142,
+            "amt": 1942,
+            "type": "Journey",
+            "rdate": "04-11-2019"
+        },
+        {
+            "name": "Apr",
+            "uv": 3313,
+            "pv": 3400,
+            "amt": 1501,
+            "type": "Frequency",
+            "rdate": "04-12-2019"
+        },
+        {
+            "name": "Apr",
+            "uv": 6187,
+            "pv": 3626,
+            "amt": 3093,
+            "type": "Frequency",
+            "rdate": "04-13-2019"
+        },
+        {
+            "name": "Apr",
+            "uv": 3094,
+            "pv": 4322,
+            "amt": 1577,
+            "type": "Frequency",
+            "rdate": "04-14-2019"
+        },
+        {
+            "name": "Apr",
+            "uv": 2895,
+            "pv": 1702,
+            "amt": 2521,
+            "type": "Journey",
+            "rdate": "04-15-2019"
+        },
+        {
+            "name": "Apr",
+            "uv": 1578,
+            "pv": 4489,
+            "amt": 1790,
+            "type": "Journey",
+            "rdate": "04-16-2019"
+        },
+        {
+            "name": "Apr",
+            "uv": 4508,
+            "pv": 2004,
+            "amt": 3077,
             "type": "Hobby",
-            "rdate": ""
+            "rdate": "04-17-2019"
+        },
+        {
+            "name": "Apr",
+            "uv": 2014,
+            "pv": 3202,
+            "amt": 2972,
+            "type": "Hobby",
+            "rdate": "04-18-2019"
+        },
+        {
+            "name": "Apr",
+            "uv": 5667,
+            "pv": 1508,
+            "amt": 1564,
+            "type": "Frequency",
+            "rdate": "04-19-2019"
+        },
+        {
+            "name": "Apr",
+            "uv": 4443,
+            "pv": 2855,
+            "amt": 3405,
+            "type": "Journey",
+            "rdate": "04-20-2019"
+        },
+        {
+            "name": "Apr",
+            "uv": 4998,
+            "pv": 4049,
+            "amt": 3475,
+            "type": "Journey",
+            "rdate": "04-21-2019"
+        },
+        {
+            "name": "Apr",
+            "uv": 2432,
+            "pv": 4416,
+            "amt": 2361,
+            "type": "Frequency",
+            "rdate": "04-22-2019"
+        },
+        {
+            "name": "Apr",
+            "uv": 4685,
+            "pv": 3425,
+            "amt": 3398,
+            "type": "Career",
+            "rdate": "04-23-2019"
+        },
+        {
+            "name": "Apr",
+            "uv": 3236,
+            "pv": 3056,
+            "amt": 1996,
+            "type": "Frequency",
+            "rdate": "04-24-2019"
+        },
+        {
+            "name": "Apr",
+            "uv": 4363,
+            "pv": 3829,
+            "amt": 2563,
+            "type": "Frequency",
+            "rdate": "04-25-2019"
+        },
+        {
+            "name": "Apr",
+            "uv": 5560,
+            "pv": 2810,
+            "amt": 2208,
+            "type": "Journey",
+            "rdate": "04-26-2019"
+        },
+        {
+            "name": "Apr",
+            "uv": 4726,
+            "pv": 2533,
+            "amt": 2689,
+            "type": "Journey",
+            "rdate": "04-27-2019"
+        },
+        {
+            "name": "Apr",
+            "uv": 2487,
+            "pv": 2665,
+            "amt": 2733,
+            "type": "Career",
+            "rdate": "04-28-2019"
+        },
+        {
+            "name": "Apr",
+            "uv": 2591,
+            "pv": 2765,
+            "amt": 2002,
+            "type": "Medical",
+            "rdate": "04-29-2019"
         },
         {
             "name": "May",
-            "uv": 3169,
-            "pv": 1666,
-            "amt": 2798,
+            "uv": 3734,
+            "pv": 4316,
+            "amt": 2768,
+            "type": "Career",
+            "rdate": "04-30-2019"
+        },
+        {
+            "name": "May",
+            "uv": 3800,
+            "pv": 1862,
+            "amt": 2686,
+            "type": "Frequency",
+            "rdate": "05-01-2019"
+        },
+        {
+            "name": "May",
+            "uv": 6476,
+            "pv": 3735,
+            "amt": 2466,
+            "type": "Frequency",
+            "rdate": "05-02-2019"
+        },
+        {
+            "name": "May",
+            "uv": 3735,
+            "pv": 4086,
+            "amt": 1691,
+            "type": "Career",
+            "rdate": "05-03-2019"
+        },
+        {
+            "name": "May",
+            "uv": 3166,
+            "pv": 1617,
+            "amt": 1614,
+            "type": "Medical",
+            "rdate": "05-04-2019"
+        },
+        {
+            "name": "May",
+            "uv": 5698,
+            "pv": 4082,
+            "amt": 2024,
+            "type": "Career",
+            "rdate": "05-05-2019"
+        },
+        {
+            "name": "May",
+            "uv": 3997,
+            "pv": 1633,
+            "amt": 2494,
+            "type": "Frequency",
+            "rdate": "05-06-2019"
+        },
+        {
+            "name": "May",
+            "uv": 2362,
+            "pv": 3696,
+            "amt": 2385,
+            "type": "Career",
+            "rdate": "05-07-2019"
+        },
+        {
+            "name": "May",
+            "uv": 3025,
+            "pv": 3483,
+            "amt": 3424,
+            "type": "Frequency",
+            "rdate": "05-08-2019"
+        },
+        {
+            "name": "May",
+            "uv": 4182,
+            "pv": 3096,
+            "amt": 2226,
+            "type": "Frequency",
+            "rdate": "05-09-2019"
+        },
+        {
+            "name": "May",
+            "uv": 3773,
+            "pv": 2853,
+            "amt": 2087,
+            "type": "Medical",
+            "rdate": "05-10-2019"
+        },
+        {
+            "name": "May",
+            "uv": 1766,
+            "pv": 1956,
+            "amt": 2309,
             "type": "Journey",
-            "rdate": ""
+            "rdate": "05-11-2019"
+        },
+        {
+            "name": "May",
+            "uv": 1872,
+            "pv": 4068,
+            "amt": 3497,
+            "type": "Hobby",
+            "rdate": "05-12-2019"
+        },
+        {
+            "name": "May",
+            "uv": 3892,
+            "pv": 4395,
+            "amt": 1698,
+            "type": "Career",
+            "rdate": "05-13-2019"
+        },
+        {
+            "name": "May",
+            "uv": 3359,
+            "pv": 2023,
+            "amt": 2710,
+            "type": "Frequency",
+            "rdate": "05-14-2019"
+        },
+        {
+            "name": "May",
+            "uv": 5417,
+            "pv": 2102,
+            "amt": 3065,
+            "type": "Hobby",
+            "rdate": "05-15-2019"
+        },
+        {
+            "name": "May",
+            "uv": 4030,
+            "pv": 2612,
+            "amt": 2720,
+            "type": "Journey",
+            "rdate": "05-16-2019"
+        },
+        {
+            "name": "May",
+            "uv": 3497,
+            "pv": 2465,
+            "amt": 3161,
+            "type": "Journey",
+            "rdate": "05-17-2019"
+        },
+        {
+            "name": "May",
+            "uv": 4262,
+            "pv": 2141,
+            "amt": 2936,
+            "type": "Career",
+            "rdate": "05-18-2019"
+        },
+        {
+            "name": "May",
+            "uv": 5256,
+            "pv": 3102,
+            "amt": 2431,
+            "type": "Hobby",
+            "rdate": "05-19-2019"
+        },
+        {
+            "name": "May",
+            "uv": 5845,
+            "pv": 4423,
+            "amt": 2408,
+            "type": "Journey",
+            "rdate": "05-20-2019"
+        },
+        {
+            "name": "May",
+            "uv": 2212,
+            "pv": 1622,
+            "amt": 2393,
+            "type": "Career",
+            "rdate": "05-21-2019"
+        },
+        {
+            "name": "May",
+            "uv": 2886,
+            "pv": 2930,
+            "amt": 3394,
+            "type": "Medical",
+            "rdate": "05-22-2019"
+        },
+        {
+            "name": "May",
+            "uv": 1899,
+            "pv": 3166,
+            "amt": 2858,
+            "type": "Career",
+            "rdate": "05-23-2019"
+        },
+        {
+            "name": "May",
+            "uv": 4699,
+            "pv": 2597,
+            "amt": 2095,
+            "type": "Career",
+            "rdate": "05-24-2019"
+        },
+        {
+            "name": "May",
+            "uv": 4138,
+            "pv": 1724,
+            "amt": 2741,
+            "type": "Career",
+            "rdate": "05-25-2019"
+        },
+        {
+            "name": "May",
+            "uv": 2098,
+            "pv": 2470,
+            "amt": 2467,
+            "type": "Frequency",
+            "rdate": "05-26-2019"
+        },
+        {
+            "name": "May",
+            "uv": 5546,
+            "pv": 2969,
+            "amt": 2486,
+            "type": "Medical",
+            "rdate": "05-27-2019"
+        },
+        {
+            "name": "May",
+            "uv": 3175,
+            "pv": 2455,
+            "amt": 3010,
+            "type": "Hobby",
+            "rdate": "05-28-2019"
+        },
+        {
+            "name": "May",
+            "uv": 4682,
+            "pv": 2526,
+            "amt": 3254,
+            "type": "Journey",
+            "rdate": "05-29-2019"
+        },
+        {
+            "name": "May",
+            "uv": 5299,
+            "pv": 4139,
+            "amt": 2476,
+            "type": "Hobby",
+            "rdate": "05-30-2019"
         },
         {
             "name": "Jun",
-            "uv": 4464,
-            "pv": 2960,
-            "amt": 1654,
+            "uv": 4413,
+            "pv": 2482,
+            "amt": 2333,
             "type": "Career",
-            "rdate": ""
+            "rdate": "05-31-2019"
+        },
+        {
+            "name": "Jun",
+            "uv": 3519,
+            "pv": 4066,
+            "amt": 2411,
+            "type": "Career",
+            "rdate": "06-01-2019"
+        },
+        {
+            "name": "Jun",
+            "uv": 2721,
+            "pv": 4470,
+            "amt": 3326,
+            "type": "Frequency",
+            "rdate": "06-02-2019"
+        },
+        {
+            "name": "Jun",
+            "uv": 2744,
+            "pv": 1503,
+            "amt": 2032,
+            "type": "Frequency",
+            "rdate": "06-03-2019"
+        },
+        {
+            "name": "Jun",
+            "uv": 3999,
+            "pv": 1505,
+            "amt": 3316,
+            "type": "Journey",
+            "rdate": "06-04-2019"
+        },
+        {
+            "name": "Jun",
+            "uv": 4363,
+            "pv": 2217,
+            "amt": 3405,
+            "type": "Frequency",
+            "rdate": "06-05-2019"
+        },
+        {
+            "name": "Jun",
+            "uv": 4181,
+            "pv": 2483,
+            "amt": 2301,
+            "type": "Frequency",
+            "rdate": "06-06-2019"
+        },
+        {
+            "name": "Jun",
+            "uv": 5338,
+            "pv": 4298,
+            "amt": 3290,
+            "type": "Career",
+            "rdate": "06-07-2019"
+        },
+        {
+            "name": "Jun",
+            "uv": 4295,
+            "pv": 3755,
+            "amt": 2346,
+            "type": "Medical",
+            "rdate": "06-08-2019"
+        },
+        {
+            "name": "Jun",
+            "uv": 1618,
+            "pv": 3272,
+            "amt": 1655,
+            "type": "Frequency",
+            "rdate": "06-09-2019"
+        },
+        {
+            "name": "Jun",
+            "uv": 3075,
+            "pv": 2549,
+            "amt": 3014,
+            "type": "Medical",
+            "rdate": "06-10-2019"
+        },
+        {
+            "name": "Jun",
+            "uv": 5940,
+            "pv": 2785,
+            "amt": 3036,
+            "type": "Career",
+            "rdate": "06-11-2019"
+        },
+        {
+            "name": "Jun",
+            "uv": 6066,
+            "pv": 4482,
+            "amt": 1932,
+            "type": "Frequency",
+            "rdate": "06-12-2019"
+        },
+        {
+            "name": "Jun",
+            "uv": 4542,
+            "pv": 3743,
+            "amt": 2093,
+            "type": "Career",
+            "rdate": "06-13-2019"
+        },
+        {
+            "name": "Jun",
+            "uv": 3334,
+            "pv": 3468,
+            "amt": 1775,
+            "type": "Journey",
+            "rdate": "06-14-2019"
+        },
+        {
+            "name": "Jun",
+            "uv": 6240,
+            "pv": 2543,
+            "amt": 3180,
+            "type": "Frequency",
+            "rdate": "06-15-2019"
+        },
+        {
+            "name": "Jun",
+            "uv": 5832,
+            "pv": 2047,
+            "amt": 2312,
+            "type": "Journey",
+            "rdate": "06-16-2019"
+        },
+        {
+            "name": "Jun",
+            "uv": 3380,
+            "pv": 3212,
+            "amt": 3021,
+            "type": "Frequency",
+            "rdate": "06-17-2019"
+        },
+        {
+            "name": "Jun",
+            "uv": 1888,
+            "pv": 3468,
+            "amt": 2050,
+            "type": "Frequency",
+            "rdate": "06-18-2019"
+        },
+        {
+            "name": "Jun",
+            "uv": 2441,
+            "pv": 4476,
+            "amt": 2582,
+            "type": "Hobby",
+            "rdate": "06-19-2019"
+        },
+        {
+            "name": "Jun",
+            "uv": 4758,
+            "pv": 1650,
+            "amt": 1903,
+            "type": "Career",
+            "rdate": "06-20-2019"
+        },
+        {
+            "name": "Jun",
+            "uv": 1821,
+            "pv": 3085,
+            "amt": 3092,
+            "type": "Medical",
+            "rdate": "06-21-2019"
+        },
+        {
+            "name": "Jun",
+            "uv": 3524,
+            "pv": 3116,
+            "amt": 2126,
+            "type": "Frequency",
+            "rdate": "06-22-2019"
+        },
+        {
+            "name": "Jun",
+            "uv": 4114,
+            "pv": 3030,
+            "amt": 2072,
+            "type": "Career",
+            "rdate": "06-23-2019"
+        },
+        {
+            "name": "Jun",
+            "uv": 5857,
+            "pv": 3090,
+            "amt": 2878,
+            "type": "Hobby",
+            "rdate": "06-24-2019"
+        },
+        {
+            "name": "Jun",
+            "uv": 5285,
+            "pv": 3090,
+            "amt": 3354,
+            "type": "Hobby",
+            "rdate": "06-25-2019"
+        },
+        {
+            "name": "Jun",
+            "uv": 6456,
+            "pv": 2360,
+            "amt": 2800,
+            "type": "Career",
+            "rdate": "06-26-2019"
+        },
+        {
+            "name": "Jun",
+            "uv": 1545,
+            "pv": 4339,
+            "amt": 3267,
+            "type": "Career",
+            "rdate": "06-27-2019"
+        },
+        {
+            "name": "Jun",
+            "uv": 6247,
+            "pv": 3801,
+            "amt": 2772,
+            "type": "Journey",
+            "rdate": "06-28-2019"
+        },
+        {
+            "name": "Jun",
+            "uv": 4918,
+            "pv": 4167,
+            "amt": 3210,
+            "type": "Hobby",
+            "rdate": "06-29-2019"
         },
         {
             "name": "Jul",
-            "uv": 3268,
-            "pv": 1661,
-            "amt": 2513,
+            "uv": 4388,
+            "pv": 2107,
+            "amt": 3168,
+            "type": "Journey",
+            "rdate": "06-30-2019"
+        },
+        {
+            "name": "Jul",
+            "uv": 1941,
+            "pv": 3226,
+            "amt": 3040,
             "type": "Medical",
-            "rdate": ""
+            "rdate": "07-01-2019"
+        },
+        {
+            "name": "Jul",
+            "uv": 1802,
+            "pv": 1797,
+            "amt": 1678,
+            "type": "Medical",
+            "rdate": "07-02-2019"
+        },
+        {
+            "name": "Jul",
+            "uv": 3549,
+            "pv": 2708,
+            "amt": 3393,
+            "type": "Journey",
+            "rdate": "07-03-2019"
+        },
+        {
+            "name": "Jul",
+            "uv": 2179,
+            "pv": 3069,
+            "amt": 1532,
+            "type": "Hobby",
+            "rdate": "07-04-2019"
+        },
+        {
+            "name": "Jul",
+            "uv": 6246,
+            "pv": 2811,
+            "amt": 3257,
+            "type": "Career",
+            "rdate": "07-05-2019"
+        },
+        {
+            "name": "Jul",
+            "uv": 5617,
+            "pv": 1659,
+            "amt": 2236,
+            "type": "Medical",
+            "rdate": "07-06-2019"
+        },
+        {
+            "name": "Jul",
+            "uv": 3439,
+            "pv": 2731,
+            "amt": 2310,
+            "type": "Medical",
+            "rdate": "07-07-2019"
+        },
+        {
+            "name": "Jul",
+            "uv": 1627,
+            "pv": 3680,
+            "amt": 2251,
+            "type": "Medical",
+            "rdate": "07-08-2019"
+        },
+        {
+            "name": "Jul",
+            "uv": 5045,
+            "pv": 3167,
+            "amt": 3457,
+            "type": "Journey",
+            "rdate": "07-09-2019"
+        },
+        {
+            "name": "Jul",
+            "uv": 2772,
+            "pv": 1887,
+            "amt": 2961,
+            "type": "Medical",
+            "rdate": "07-10-2019"
+        },
+        {
+            "name": "Jul",
+            "uv": 3835,
+            "pv": 4033,
+            "amt": 2475,
+            "type": "Medical",
+            "rdate": "07-11-2019"
+        },
+        {
+            "name": "Jul",
+            "uv": 3370,
+            "pv": 4219,
+            "amt": 1583,
+            "type": "Frequency",
+            "rdate": "07-12-2019"
+        },
+        {
+            "name": "Jul",
+            "uv": 3330,
+            "pv": 3560,
+            "amt": 1984,
+            "type": "Frequency",
+            "rdate": "07-13-2019"
+        },
+        {
+            "name": "Jul",
+            "uv": 2698,
+            "pv": 2394,
+            "amt": 3490,
+            "type": "Frequency",
+            "rdate": "07-14-2019"
+        },
+        {
+            "name": "Jul",
+            "uv": 1985,
+            "pv": 2396,
+            "amt": 3216,
+            "type": "Frequency",
+            "rdate": "07-15-2019"
+        },
+        {
+            "name": "Jul",
+            "uv": 5127,
+            "pv": 1777,
+            "amt": 2343,
+            "type": "Career",
+            "rdate": "07-16-2019"
+        },
+        {
+            "name": "Jul",
+            "uv": 5244,
+            "pv": 2152,
+            "amt": 3122,
+            "type": "Career",
+            "rdate": "07-17-2019"
+        },
+        {
+            "name": "Jul",
+            "uv": 5218,
+            "pv": 2388,
+            "amt": 2304,
+            "type": "Medical",
+            "rdate": "07-18-2019"
+        },
+        {
+            "name": "Jul",
+            "uv": 1616,
+            "pv": 3925,
+            "amt": 1880,
+            "type": "Hobby",
+            "rdate": "07-19-2019"
+        },
+        {
+            "name": "Jul",
+            "uv": 3068,
+            "pv": 2083,
+            "amt": 1734,
+            "type": "Hobby",
+            "rdate": "07-20-2019"
+        },
+        {
+            "name": "Jul",
+            "uv": 6266,
+            "pv": 1979,
+            "amt": 3015,
+            "type": "Frequency",
+            "rdate": "07-21-2019"
+        },
+        {
+            "name": "Jul",
+            "uv": 3779,
+            "pv": 2652,
+            "amt": 3149,
+            "type": "Medical",
+            "rdate": "07-22-2019"
+        },
+        {
+            "name": "Jul",
+            "uv": 6061,
+            "pv": 3203,
+            "amt": 2447,
+            "type": "Career",
+            "rdate": "07-23-2019"
+        },
+        {
+            "name": "Jul",
+            "uv": 2316,
+            "pv": 3043,
+            "amt": 1545,
+            "type": "Hobby",
+            "rdate": "07-24-2019"
+        },
+        {
+            "name": "Jul",
+            "uv": 3718,
+            "pv": 3945,
+            "amt": 2701,
+            "type": "Journey",
+            "rdate": "07-25-2019"
+        },
+        {
+            "name": "Jul",
+            "uv": 6328,
+            "pv": 4267,
+            "amt": 2682,
+            "type": "Hobby",
+            "rdate": "07-26-2019"
+        },
+        {
+            "name": "Jul",
+            "uv": 4537,
+            "pv": 3529,
+            "amt": 1798,
+            "type": "Hobby",
+            "rdate": "07-27-2019"
+        },
+        {
+            "name": "Jul",
+            "uv": 5201,
+            "pv": 1723,
+            "amt": 3235,
+            "type": "Career",
+            "rdate": "07-28-2019"
+        },
+        {
+            "name": "Jul",
+            "uv": 3770,
+            "pv": 1963,
+            "amt": 2278,
+            "type": "Journey",
+            "rdate": "07-29-2019"
+        },
+        {
+            "name": "Jul",
+            "uv": 6147,
+            "pv": 2136,
+            "amt": 1868,
+            "type": "Hobby",
+            "rdate": "07-30-2019"
         },
         {
             "name": "Aug",
-            "uv": 5150,
-            "pv": 1716,
-            "amt": 2658,
-            "type": "Journey",
-            "rdate": ""
+            "uv": 4208,
+            "pv": 4027,
+            "amt": 2671,
+            "type": "Career",
+            "rdate": "07-31-2019"
         },
         {
-            "name": "Sept",
-            "uv": 5464,
-            "pv": 4161,
-            "amt": 3156,
+            "name": "Aug",
+            "uv": 5833,
+            "pv": 2219,
+            "amt": 2350,
+            "type": "Hobby",
+            "rdate": "08-01-2019"
+        },
+        {
+            "name": "Aug",
+            "uv": 4520,
+            "pv": 1989,
+            "amt": 2973,
+            "type": "Journey",
+            "rdate": "08-02-2019"
+        },
+        {
+            "name": "Aug",
+            "uv": 4995,
+            "pv": 3512,
+            "amt": 3170,
+            "type": "Medical",
+            "rdate": "08-03-2019"
+        },
+        {
+            "name": "Aug",
+            "uv": 1802,
+            "pv": 1678,
+            "amt": 2753,
             "type": "Frequency",
-            "rdate": ""
+            "rdate": "08-04-2019"
+        },
+        {
+            "name": "Aug",
+            "uv": 4178,
+            "pv": 1743,
+            "amt": 2975,
+            "type": "Career",
+            "rdate": "08-05-2019"
+        },
+        {
+            "name": "Aug",
+            "uv": 5545,
+            "pv": 2332,
+            "amt": 2983,
+            "type": "Journey",
+            "rdate": "08-06-2019"
+        },
+        {
+            "name": "Aug",
+            "uv": 2701,
+            "pv": 2437,
+            "amt": 3482,
+            "type": "Medical",
+            "rdate": "08-07-2019"
+        },
+        {
+            "name": "Aug",
+            "uv": 2654,
+            "pv": 1641,
+            "amt": 1978,
+            "type": "Career",
+            "rdate": "08-08-2019"
+        },
+        {
+            "name": "Aug",
+            "uv": 2470,
+            "pv": 2335,
+            "amt": 2202,
+            "type": "Frequency",
+            "rdate": "08-09-2019"
+        },
+        {
+            "name": "Aug",
+            "uv": 6192,
+            "pv": 3333,
+            "amt": 1940,
+            "type": "Career",
+            "rdate": "08-10-2019"
+        },
+        {
+            "name": "Aug",
+            "uv": 2275,
+            "pv": 3306,
+            "amt": 3106,
+            "type": "Medical",
+            "rdate": "08-11-2019"
+        },
+        {
+            "name": "Aug",
+            "uv": 5557,
+            "pv": 3203,
+            "amt": 2582,
+            "type": "Medical",
+            "rdate": "08-12-2019"
+        },
+        {
+            "name": "Aug",
+            "uv": 3605,
+            "pv": 1807,
+            "amt": 2010,
+            "type": "Medical",
+            "rdate": "08-13-2019"
+        },
+        {
+            "name": "Aug",
+            "uv": 3100,
+            "pv": 2489,
+            "amt": 2283,
+            "type": "Hobby",
+            "rdate": "08-14-2019"
+        },
+        {
+            "name": "Aug",
+            "uv": 5373,
+            "pv": 2910,
+            "amt": 2641,
+            "type": "Journey",
+            "rdate": "08-15-2019"
+        },
+        {
+            "name": "Aug",
+            "uv": 5451,
+            "pv": 4177,
+            "amt": 1700,
+            "type": "Career",
+            "rdate": "08-16-2019"
+        },
+        {
+            "name": "Aug",
+            "uv": 5491,
+            "pv": 3579,
+            "amt": 3246,
+            "type": "Career",
+            "rdate": "08-17-2019"
+        },
+        {
+            "name": "Aug",
+            "uv": 6141,
+            "pv": 3811,
+            "amt": 2860,
+            "type": "Frequency",
+            "rdate": "08-18-2019"
+        },
+        {
+            "name": "Aug",
+            "uv": 1512,
+            "pv": 4394,
+            "amt": 3032,
+            "type": "Frequency",
+            "rdate": "08-19-2019"
+        },
+        {
+            "name": "Aug",
+            "uv": 2377,
+            "pv": 3927,
+            "amt": 2376,
+            "type": "Medical",
+            "rdate": "08-20-2019"
+        },
+        {
+            "name": "Aug",
+            "uv": 5239,
+            "pv": 3444,
+            "amt": 3190,
+            "type": "Hobby",
+            "rdate": "08-21-2019"
+        },
+        {
+            "name": "Aug",
+            "uv": 2699,
+            "pv": 3939,
+            "amt": 2822,
+            "type": "Medical",
+            "rdate": "08-22-2019"
+        },
+        {
+            "name": "Aug",
+            "uv": 6428,
+            "pv": 2079,
+            "amt": 1572,
+            "type": "Hobby",
+            "rdate": "08-23-2019"
+        },
+        {
+            "name": "Aug",
+            "uv": 2034,
+            "pv": 4490,
+            "amt": 2966,
+            "type": "Hobby",
+            "rdate": "08-24-2019"
+        },
+        {
+            "name": "Aug",
+            "uv": 2952,
+            "pv": 2230,
+            "amt": 2143,
+            "type": "Hobby",
+            "rdate": "08-25-2019"
+        },
+        {
+            "name": "Aug",
+            "uv": 4318,
+            "pv": 3614,
+            "amt": 2997,
+            "type": "Journey",
+            "rdate": "08-26-2019"
+        },
+        {
+            "name": "Aug",
+            "uv": 1661,
+            "pv": 3107,
+            "amt": 3448,
+            "type": "Hobby",
+            "rdate": "08-27-2019"
+        },
+        {
+            "name": "Aug",
+            "uv": 2021,
+            "pv": 2660,
+            "amt": 2088,
+            "type": "Journey",
+            "rdate": "08-28-2019"
+        },
+        {
+            "name": "Aug",
+            "uv": 3445,
+            "pv": 3186,
+            "amt": 2216,
+            "type": "Frequency",
+            "rdate": "08-29-2019"
+        },
+        {
+            "name": "Aug",
+            "uv": 3922,
+            "pv": 2237,
+            "amt": 3380,
+            "type": "Journey",
+            "rdate": "08-30-2019"
+        },
+        {
+            "name": "Sep",
+            "uv": 2883,
+            "pv": 4479,
+            "amt": 3179,
+            "type": "Journey",
+            "rdate": "08-31-2019"
+        },
+        {
+            "name": "Sep",
+            "uv": 2865,
+            "pv": 4434,
+            "amt": 2681,
+            "type": "Frequency",
+            "rdate": "09-01-2019"
+        },
+        {
+            "name": "Sep",
+            "uv": 4011,
+            "pv": 2572,
+            "amt": 1886,
+            "type": "Hobby",
+            "rdate": "09-02-2019"
+        },
+        {
+            "name": "Sep",
+            "uv": 5559,
+            "pv": 4401,
+            "amt": 2081,
+            "type": "Journey",
+            "rdate": "09-03-2019"
+        },
+        {
+            "name": "Sep",
+            "uv": 3872,
+            "pv": 3072,
+            "amt": 1922,
+            "type": "Hobby",
+            "rdate": "09-04-2019"
+        },
+        {
+            "name": "Sep",
+            "uv": 3224,
+            "pv": 4169,
+            "amt": 3352,
+            "type": "Hobby",
+            "rdate": "09-05-2019"
+        },
+        {
+            "name": "Sep",
+            "uv": 2224,
+            "pv": 2333,
+            "amt": 1893,
+            "type": "Hobby",
+            "rdate": "09-06-2019"
+        },
+        {
+            "name": "Sep",
+            "uv": 2859,
+            "pv": 2312,
+            "amt": 2906,
+            "type": "Career",
+            "rdate": "09-07-2019"
+        },
+        {
+            "name": "Sep",
+            "uv": 5721,
+            "pv": 3917,
+            "amt": 2333,
+            "type": "Hobby",
+            "rdate": "09-08-2019"
+        },
+        {
+            "name": "Sep",
+            "uv": 6331,
+            "pv": 2868,
+            "amt": 1533,
+            "type": "Medical",
+            "rdate": "09-09-2019"
+        },
+        {
+            "name": "Sep",
+            "uv": 2099,
+            "pv": 4318,
+            "amt": 2280,
+            "type": "Hobby",
+            "rdate": "09-10-2019"
+        },
+        {
+            "name": "Sep",
+            "uv": 2356,
+            "pv": 3991,
+            "amt": 3456,
+            "type": "Hobby",
+            "rdate": "09-11-2019"
+        },
+        {
+            "name": "Sep",
+            "uv": 3785,
+            "pv": 4367,
+            "amt": 1606,
+            "type": "Frequency",
+            "rdate": "09-12-2019"
+        },
+        {
+            "name": "Sep",
+            "uv": 2400,
+            "pv": 1508,
+            "amt": 2349,
+            "type": "Career",
+            "rdate": "09-13-2019"
+        },
+        {
+            "name": "Sep",
+            "uv": 3816,
+            "pv": 2156,
+            "amt": 3363,
+            "type": "Journey",
+            "rdate": "09-14-2019"
+        },
+        {
+            "name": "Sep",
+            "uv": 5228,
+            "pv": 2822,
+            "amt": 3117,
+            "type": "Journey",
+            "rdate": "09-15-2019"
+        },
+        {
+            "name": "Sep",
+            "uv": 4445,
+            "pv": 3550,
+            "amt": 2373,
+            "type": "Hobby",
+            "rdate": "09-16-2019"
+        },
+        {
+            "name": "Sep",
+            "uv": 3472,
+            "pv": 3889,
+            "amt": 2272,
+            "type": "Frequency",
+            "rdate": "09-17-2019"
+        },
+        {
+            "name": "Sep",
+            "uv": 6487,
+            "pv": 2485,
+            "amt": 2065,
+            "type": "Journey",
+            "rdate": "09-18-2019"
+        },
+        {
+            "name": "Sep",
+            "uv": 5104,
+            "pv": 2910,
+            "amt": 1604,
+            "type": "Journey",
+            "rdate": "09-19-2019"
+        },
+        {
+            "name": "Sep",
+            "uv": 2137,
+            "pv": 2267,
+            "amt": 1680,
+            "type": "Medical",
+            "rdate": "09-20-2019"
+        },
+        {
+            "name": "Sep",
+            "uv": 2689,
+            "pv": 3144,
+            "amt": 3256,
+            "type": "Hobby",
+            "rdate": "09-21-2019"
+        },
+        {
+            "name": "Sep",
+            "uv": 3027,
+            "pv": 2901,
+            "amt": 2939,
+            "type": "Career",
+            "rdate": "09-22-2019"
+        },
+        {
+            "name": "Sep",
+            "uv": 2383,
+            "pv": 2443,
+            "amt": 3128,
+            "type": "Medical",
+            "rdate": "09-23-2019"
+        },
+        {
+            "name": "Sep",
+            "uv": 5796,
+            "pv": 4385,
+            "amt": 1879,
+            "type": "Hobby",
+            "rdate": "09-24-2019"
+        },
+        {
+            "name": "Sep",
+            "uv": 2196,
+            "pv": 2047,
+            "amt": 3380,
+            "type": "Medical",
+            "rdate": "09-25-2019"
+        },
+        {
+            "name": "Sep",
+            "uv": 2622,
+            "pv": 3773,
+            "amt": 2151,
+            "type": "Medical",
+            "rdate": "09-26-2019"
+        },
+        {
+            "name": "Sep",
+            "uv": 4182,
+            "pv": 1981,
+            "amt": 3414,
+            "type": "Journey",
+            "rdate": "09-27-2019"
+        },
+        {
+            "name": "Sep",
+            "uv": 4697,
+            "pv": 1880,
+            "amt": 1578,
+            "type": "Medical",
+            "rdate": "09-28-2019"
+        },
+        {
+            "name": "Sep",
+            "uv": 3642,
+            "pv": 4141,
+            "amt": 1779,
+            "type": "Career",
+            "rdate": "09-29-2019"
         },
         {
             "name": "Oct",
-            "uv": 2143,
-            "pv": 3693,
-            "amt": 3154,
+            "uv": 2839,
+            "pv": 1538,
+            "amt": 3021,
+            "type": "Journey",
+            "rdate": "09-30-2019"
+        },
+        {
+            "name": "Oct",
+            "uv": 5090,
+            "pv": 3293,
+            "amt": 3001,
+            "type": "Journey",
+            "rdate": "10-01-2019"
+        },
+        {
+            "name": "Oct",
+            "uv": 2685,
+            "pv": 4037,
+            "amt": 3489,
             "type": "Medical",
-            "rdate": ""
+            "rdate": "10-02-2019"
+        },
+        {
+            "name": "Oct",
+            "uv": 3265,
+            "pv": 2730,
+            "amt": 2516,
+            "type": "Hobby",
+            "rdate": "10-03-2019"
+        },
+        {
+            "name": "Oct",
+            "uv": 2139,
+            "pv": 3279,
+            "amt": 3297,
+            "type": "Medical",
+            "rdate": "10-04-2019"
+        },
+        {
+            "name": "Oct",
+            "uv": 4118,
+            "pv": 3818,
+            "amt": 2380,
+            "type": "Frequency",
+            "rdate": "10-05-2019"
+        },
+        {
+            "name": "Oct",
+            "uv": 3001,
+            "pv": 4250,
+            "amt": 2413,
+            "type": "Career",
+            "rdate": "10-06-2019"
+        },
+        {
+            "name": "Oct",
+            "uv": 3478,
+            "pv": 3730,
+            "amt": 1777,
+            "type": "Frequency",
+            "rdate": "10-07-2019"
+        },
+        {
+            "name": "Oct",
+            "uv": 4457,
+            "pv": 3718,
+            "amt": 3343,
+            "type": "Frequency",
+            "rdate": "10-08-2019"
+        },
+        {
+            "name": "Oct",
+            "uv": 3902,
+            "pv": 4259,
+            "amt": 2638,
+            "type": "Journey",
+            "rdate": "10-09-2019"
+        },
+        {
+            "name": "Oct",
+            "uv": 4640,
+            "pv": 3882,
+            "amt": 3090,
+            "type": "Hobby",
+            "rdate": "10-10-2019"
+        },
+        {
+            "name": "Oct",
+            "uv": 3431,
+            "pv": 1678,
+            "amt": 2837,
+            "type": "Career",
+            "rdate": "10-11-2019"
+        },
+        {
+            "name": "Oct",
+            "uv": 5799,
+            "pv": 3537,
+            "amt": 3248,
+            "type": "Career",
+            "rdate": "10-12-2019"
+        },
+        {
+            "name": "Oct",
+            "uv": 6352,
+            "pv": 4345,
+            "amt": 2205,
+            "type": "Journey",
+            "rdate": "10-13-2019"
+        },
+        {
+            "name": "Oct",
+            "uv": 6095,
+            "pv": 2533,
+            "amt": 2783,
+            "type": "Journey",
+            "rdate": "10-14-2019"
+        },
+        {
+            "name": "Oct",
+            "uv": 3778,
+            "pv": 2231,
+            "amt": 1535,
+            "type": "Frequency",
+            "rdate": "10-15-2019"
+        },
+        {
+            "name": "Oct",
+            "uv": 1832,
+            "pv": 2205,
+            "amt": 2748,
+            "type": "Frequency",
+            "rdate": "10-16-2019"
+        },
+        {
+            "name": "Oct",
+            "uv": 2391,
+            "pv": 1607,
+            "amt": 2645,
+            "type": "Frequency",
+            "rdate": "10-17-2019"
+        },
+        {
+            "name": "Oct",
+            "uv": 5217,
+            "pv": 3863,
+            "amt": 3202,
+            "type": "Medical",
+            "rdate": "10-18-2019"
+        },
+        {
+            "name": "Oct",
+            "uv": 3043,
+            "pv": 2730,
+            "amt": 3188,
+            "type": "Hobby",
+            "rdate": "10-19-2019"
+        },
+        {
+            "name": "Oct",
+            "uv": 3049,
+            "pv": 2772,
+            "amt": 1649,
+            "type": "Career",
+            "rdate": "10-20-2019"
+        },
+        {
+            "name": "Oct",
+            "uv": 2242,
+            "pv": 3746,
+            "amt": 3308,
+            "type": "Frequency",
+            "rdate": "10-21-2019"
+        },
+        {
+            "name": "Oct",
+            "uv": 5143,
+            "pv": 3937,
+            "amt": 2941,
+            "type": "Career",
+            "rdate": "10-22-2019"
+        },
+        {
+            "name": "Oct",
+            "uv": 6309,
+            "pv": 3721,
+            "amt": 2146,
+            "type": "Journey",
+            "rdate": "10-23-2019"
+        },
+        {
+            "name": "Oct",
+            "uv": 4061,
+            "pv": 3261,
+            "amt": 3183,
+            "type": "Journey",
+            "rdate": "10-24-2019"
+        },
+        {
+            "name": "Oct",
+            "uv": 5193,
+            "pv": 1663,
+            "amt": 2723,
+            "type": "Frequency",
+            "rdate": "10-25-2019"
+        },
+        {
+            "name": "Oct",
+            "uv": 3726,
+            "pv": 1744,
+            "amt": 2681,
+            "type": "Medical",
+            "rdate": "10-26-2019"
+        },
+        {
+            "name": "Oct",
+            "uv": 5682,
+            "pv": 3455,
+            "amt": 1708,
+            "type": "Journey",
+            "rdate": "10-27-2019"
+        },
+        {
+            "name": "Oct",
+            "uv": 2666,
+            "pv": 2682,
+            "amt": 1682,
+            "type": "Journey",
+            "rdate": "10-28-2019"
+        },
+        {
+            "name": "Oct",
+            "uv": 6475,
+            "pv": 3703,
+            "amt": 2873,
+            "type": "Hobby",
+            "rdate": "10-29-2019"
+        },
+        {
+            "name": "Oct",
+            "uv": 3546,
+            "pv": 2715,
+            "amt": 3410,
+            "type": "Medical",
+            "rdate": "10-30-2019"
         },
         {
             "name": "Nov",
-            "uv": 3573,
-            "pv": 3795,
-            "amt": 2511,
+            "uv": 4980,
+            "pv": 2296,
+            "amt": 2789,
             "type": "Career",
-            "rdate": ""
+            "rdate": "10-31-2019"
+        },
+        {
+            "name": "Nov",
+            "uv": 1900,
+            "pv": 2816,
+            "amt": 1872,
+            "type": "Hobby",
+            "rdate": "11-01-2019"
+        },
+        {
+            "name": "Nov",
+            "uv": 5356,
+            "pv": 1977,
+            "amt": 2916,
+            "type": "Medical",
+            "rdate": "11-02-2019"
+        },
+        {
+            "name": "Nov",
+            "uv": 1531,
+            "pv": 1902,
+            "amt": 2579,
+            "type": "Frequency",
+            "rdate": "11-03-2019"
+        },
+        {
+            "name": "Nov",
+            "uv": 3734,
+            "pv": 1516,
+            "amt": 3433,
+            "type": "Medical",
+            "rdate": "11-04-2019"
+        },
+        {
+            "name": "Nov",
+            "uv": 1701,
+            "pv": 2378,
+            "amt": 2048,
+            "type": "Medical",
+            "rdate": "11-05-2019"
+        },
+        {
+            "name": "Nov",
+            "uv": 3563,
+            "pv": 3228,
+            "amt": 2223,
+            "type": "Career",
+            "rdate": "11-06-2019"
+        },
+        {
+            "name": "Nov",
+            "uv": 3170,
+            "pv": 4071,
+            "amt": 1568,
+            "type": "Hobby",
+            "rdate": "11-07-2019"
+        },
+        {
+            "name": "Nov",
+            "uv": 6073,
+            "pv": 2708,
+            "amt": 2315,
+            "type": "Journey",
+            "rdate": "11-08-2019"
+        },
+        {
+            "name": "Nov",
+            "uv": 5016,
+            "pv": 4229,
+            "amt": 2890,
+            "type": "Medical",
+            "rdate": "11-09-2019"
+        },
+        {
+            "name": "Nov",
+            "uv": 1905,
+            "pv": 2198,
+            "amt": 2961,
+            "type": "Frequency",
+            "rdate": "11-10-2019"
+        },
+        {
+            "name": "Nov",
+            "uv": 1520,
+            "pv": 4392,
+            "amt": 1734,
+            "type": "Journey",
+            "rdate": "11-11-2019"
+        },
+        {
+            "name": "Nov",
+            "uv": 4842,
+            "pv": 3332,
+            "amt": 1774,
+            "type": "Frequency",
+            "rdate": "11-12-2019"
+        },
+        {
+            "name": "Nov",
+            "uv": 5112,
+            "pv": 3905,
+            "amt": 2870,
+            "type": "Frequency",
+            "rdate": "11-13-2019"
+        },
+        {
+            "name": "Nov",
+            "uv": 2207,
+            "pv": 1565,
+            "amt": 2532,
+            "type": "Hobby",
+            "rdate": "11-14-2019"
+        },
+        {
+            "name": "Nov",
+            "uv": 1547,
+            "pv": 3541,
+            "amt": 2815,
+            "type": "Journey",
+            "rdate": "11-15-2019"
+        },
+        {
+            "name": "Nov",
+            "uv": 5863,
+            "pv": 2450,
+            "amt": 2208,
+            "type": "Career",
+            "rdate": "11-16-2019"
+        },
+        {
+            "name": "Nov",
+            "uv": 3022,
+            "pv": 3139,
+            "amt": 2228,
+            "type": "Hobby",
+            "rdate": "11-17-2019"
+        },
+        {
+            "name": "Nov",
+            "uv": 5536,
+            "pv": 2284,
+            "amt": 1680,
+            "type": "Journey",
+            "rdate": "11-18-2019"
+        },
+        {
+            "name": "Nov",
+            "uv": 5928,
+            "pv": 2124,
+            "amt": 2921,
+            "type": "Medical",
+            "rdate": "11-19-2019"
+        },
+        {
+            "name": "Nov",
+            "uv": 5822,
+            "pv": 3421,
+            "amt": 2577,
+            "type": "Medical",
+            "rdate": "11-20-2019"
+        },
+        {
+            "name": "Nov",
+            "uv": 3678,
+            "pv": 2023,
+            "amt": 2132,
+            "type": "Hobby",
+            "rdate": "11-21-2019"
+        },
+        {
+            "name": "Nov",
+            "uv": 2418,
+            "pv": 2858,
+            "amt": 3003,
+            "type": "Career",
+            "rdate": "11-22-2019"
+        },
+        {
+            "name": "Nov",
+            "uv": 4757,
+            "pv": 3588,
+            "amt": 2105,
+            "type": "Career",
+            "rdate": "11-23-2019"
+        },
+        {
+            "name": "Nov",
+            "uv": 3393,
+            "pv": 3417,
+            "amt": 3135,
+            "type": "Journey",
+            "rdate": "11-24-2019"
+        },
+        {
+            "name": "Nov",
+            "uv": 3321,
+            "pv": 1939,
+            "amt": 2367,
+            "type": "Medical",
+            "rdate": "11-25-2019"
+        },
+        {
+            "name": "Nov",
+            "uv": 6454,
+            "pv": 3917,
+            "amt": 2119,
+            "type": "Journey",
+            "rdate": "11-26-2019"
+        },
+        {
+            "name": "Nov",
+            "uv": 1823,
+            "pv": 1662,
+            "amt": 2217,
+            "type": "Hobby",
+            "rdate": "11-27-2019"
+        },
+        {
+            "name": "Nov",
+            "uv": 2930,
+            "pv": 3614,
+            "amt": 3289,
+            "type": "Journey",
+            "rdate": "11-28-2019"
+        },
+        {
+            "name": "Nov",
+            "uv": 6114,
+            "pv": 4219,
+            "amt": 2348,
+            "type": "Career",
+            "rdate": "11-29-2019"
         },
         {
             "name": "Dec",
-            "uv": 3046,
-            "pv": 3401,
-            "amt": 1641,
+            "uv": 4120,
+            "pv": 3323,
+            "amt": 1667,
+            "type": "Career",
+            "rdate": "11-30-2019"
+        },
+        {
+            "name": "Dec",
+            "uv": 5931,
+            "pv": 4450,
+            "amt": 2176,
+            "type": "Career",
+            "rdate": "12-01-2019"
+        },
+        {
+            "name": "Dec",
+            "uv": 4068,
+            "pv": 4229,
+            "amt": 2369,
             "type": "Frequency",
-            "rdate": ""
+            "rdate": "12-02-2019"
+        },
+        {
+            "name": "Dec",
+            "uv": 5001,
+            "pv": 4009,
+            "amt": 1684,
+            "type": "Hobby",
+            "rdate": "12-03-2019"
+        },
+        {
+            "name": "Dec",
+            "uv": 1602,
+            "pv": 3015,
+            "amt": 3070,
+            "type": "Career",
+            "rdate": "12-04-2019"
+        },
+        {
+            "name": "Dec",
+            "uv": 3403,
+            "pv": 4288,
+            "amt": 3443,
+            "type": "Hobby",
+            "rdate": "12-05-2019"
+        },
+        {
+            "name": "Dec",
+            "uv": 4325,
+            "pv": 3513,
+            "amt": 2086,
+            "type": "Hobby",
+            "rdate": "12-06-2019"
+        },
+        {
+            "name": "Dec",
+            "uv": 4076,
+            "pv": 4192,
+            "amt": 2000,
+            "type": "Hobby",
+            "rdate": "12-07-2019"
+        },
+        {
+            "name": "Dec",
+            "uv": 2297,
+            "pv": 2623,
+            "amt": 1697,
+            "type": "Career",
+            "rdate": "12-08-2019"
+        },
+        {
+            "name": "Dec",
+            "uv": 1887,
+            "pv": 4057,
+            "amt": 1999,
+            "type": "Frequency",
+            "rdate": "12-09-2019"
+        },
+        {
+            "name": "Dec",
+            "uv": 3084,
+            "pv": 2501,
+            "amt": 2783,
+            "type": "Career",
+            "rdate": "12-10-2019"
+        },
+        {
+            "name": "Dec",
+            "uv": 4429,
+            "pv": 1510,
+            "amt": 2931,
+            "type": "Frequency",
+            "rdate": "12-11-2019"
+        },
+        {
+            "name": "Dec",
+            "uv": 2783,
+            "pv": 2511,
+            "amt": 2785,
+            "type": "Career",
+            "rdate": "12-12-2019"
+        },
+        {
+            "name": "Dec",
+            "uv": 4011,
+            "pv": 1847,
+            "amt": 1745,
+            "type": "Hobby",
+            "rdate": "12-13-2019"
+        },
+        {
+            "name": "Dec",
+            "uv": 2445,
+            "pv": 4455,
+            "amt": 1836,
+            "type": "Medical",
+            "rdate": "12-14-2019"
+        },
+        {
+            "name": "Dec",
+            "uv": 4643,
+            "pv": 4050,
+            "amt": 1683,
+            "type": "Medical",
+            "rdate": "12-15-2019"
+        },
+        {
+            "name": "Dec",
+            "uv": 1996,
+            "pv": 4359,
+            "amt": 2238,
+            "type": "Hobby",
+            "rdate": "12-16-2019"
+        },
+        {
+            "name": "Dec",
+            "uv": 6490,
+            "pv": 4025,
+            "amt": 2496,
+            "type": "Medical",
+            "rdate": "12-17-2019"
+        },
+        {
+            "name": "Dec",
+            "uv": 3073,
+            "pv": 3123,
+            "amt": 3104,
+            "type": "Hobby",
+            "rdate": "12-18-2019"
+        },
+        {
+            "name": "Dec",
+            "uv": 4083,
+            "pv": 2506,
+            "amt": 1661,
+            "type": "Frequency",
+            "rdate": "12-19-2019"
+        },
+        {
+            "name": "Dec",
+            "uv": 5173,
+            "pv": 4487,
+            "amt": 2783,
+            "type": "Hobby",
+            "rdate": "12-20-2019"
+        },
+        {
+            "name": "Dec",
+            "uv": 4769,
+            "pv": 1636,
+            "amt": 3159,
+            "type": "Frequency",
+            "rdate": "12-21-2019"
+        },
+        {
+            "name": "Dec",
+            "uv": 3166,
+            "pv": 1792,
+            "amt": 2425,
+            "type": "Journey",
+            "rdate": "12-22-2019"
+        },
+        {
+            "name": "Dec",
+            "uv": 4956,
+            "pv": 2276,
+            "amt": 2574,
+            "type": "Frequency",
+            "rdate": "12-23-2019"
+        },
+        {
+            "name": "Dec",
+            "uv": 3942,
+            "pv": 1519,
+            "amt": 2039,
+            "type": "Journey",
+            "rdate": "12-24-2019"
+        },
+        {
+            "name": "Dec",
+            "uv": 4444,
+            "pv": 4203,
+            "amt": 3298,
+            "type": "Career",
+            "rdate": "12-25-2019"
+        },
+        {
+            "name": "Dec",
+            "uv": 3618,
+            "pv": 2079,
+            "amt": 2519,
+            "type": "Career",
+            "rdate": "12-26-2019"
+        },
+        {
+            "name": "Dec",
+            "uv": 3404,
+            "pv": 3310,
+            "amt": 3145,
+            "type": "Journey",
+            "rdate": "12-27-2019"
+        },
+        {
+            "name": "Dec",
+            "uv": 5929,
+            "pv": 3696,
+            "amt": 2103,
+            "type": "Medical",
+            "rdate": "12-28-2019"
+        },
+        {
+            "name": "Dec",
+            "uv": 4134,
+            "pv": 2823,
+            "amt": 1579,
+            "type": "Frequency",
+            "rdate": "12-29-2019"
+        },
+        {
+            "name": "Dec",
+            "uv": 3253,
+            "pv": 3011,
+            "amt": 3459,
+            "type": "Frequency",
+            "rdate": "12-30-2019"
         }
     ]
 }
