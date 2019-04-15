@@ -3,9 +3,13 @@ import {
     LOAD_DATA_ERROR, GRAPH_START_DATE,
     GRAPH_END_DATE,
     GRAPH_TYPE,
-    LOAD_ORGANISATION_RESPONSE
+    LOAD_ORGANISATION_RESPONSE,
+    SELECTED_CHART_TYPE
 } from '../action';
 import Immutable from 'immutable';
+
+import { CHART_TYPES } from '../constants';
+
 
 const INITIAL_REDDIT_STATE = Immutable.fromJS({
     graph: {
@@ -13,6 +17,10 @@ const INITIAL_REDDIT_STATE = Immutable.fromJS({
         start: '',
         end: '',
         type: 'none'
+    },
+    chartTypeFilter: {
+        types: CHART_TYPES,
+        selected: 'line'
     },
     organisation: [],
     result: [1, 2, 3, 4],
@@ -42,6 +50,10 @@ const reducer = (state = INITIAL_REDDIT_STATE, action) => {
         case GRAPH_TYPE:
             return state
                 .setIn(['graph', 'type'], action.graphType)
+
+        case SELECTED_CHART_TYPE:
+            return state
+                .setIn(['chartTypeFilter', 'selected'], action.chartType)
         default:
             return state;
     }

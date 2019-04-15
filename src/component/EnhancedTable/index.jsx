@@ -21,8 +21,10 @@ import { lighten } from '@material-ui/core/styles/colorManipulator';
 
 const CustomTableCell = withStyles(theme => ({
   head: {
-    backgroundColor: theme.palette.common.black,
+    backgroundColor: theme.palette.primary.main,
     color: theme.palette.common.white,
+    paddingLeft: 10,
+    paddingRight: 10,
   },
   body: {
     fontSize: 14,
@@ -82,7 +84,7 @@ class EnhancedTableHead extends React.Component {
         <TableRow>
           {rows.map(
             row => (
-              <TableCell
+              <CustomTableCell
                 key={row.id}
                 align={row.numeric ? 'right' : 'left'}
                 padding={row.disablePadding ? 'none' : 'default'}
@@ -101,7 +103,7 @@ class EnhancedTableHead extends React.Component {
                     {row.label}
                   </TableSortLabel>
                 </Tooltip>
-              </TableCell>
+              </CustomTableCell>
             ),
             this,
           )}
@@ -136,7 +138,7 @@ const toolbarStyles = theme => ({
     flex: '1 1 100%',
   },
   actions: {
-    color: theme.palette.text.secondary,
+    color: theme.palette.text.primary,
   },
   title: {
     flex: '0 0 auto',
@@ -252,8 +254,7 @@ class EnhancedTable extends React.Component {
     const emptyRows = rowsPerPage - Math.min(rowsPerPage, organisationData - page * rowsPerPage);
     return (
       <Paper className={classes.root}>
-        <EnhancedTableToolbar numSelected={selected.length} />
-        <div className={classes.tableWrapper}>
+        <div className={classes.tableWrapper} style={{margin: 10}}>
           <Table className={classes.table} aria-labelledby="tableTitle">
             <EnhancedTableHead
               numSelected={selected.length}
@@ -269,7 +270,7 @@ class EnhancedTable extends React.Component {
                 .map(n => {
                   const isSelected = this.isSelected(n.id);
                   return (
-                    <TableRow>
+                    <TableRow className={classes.row}>
 
                     <TableCell align="right">{n.OrganizationName}</TableCell>
                     <TableCell align="right">{n.PlanCode}</TableCell>

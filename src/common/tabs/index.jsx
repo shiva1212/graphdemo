@@ -6,6 +6,7 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import TextField from '@material-ui/core/TextField';
+
 function TabContainer(props) {
 
     return (
@@ -29,6 +30,7 @@ const styles = theme => ({
     },
     fieldResize: {
         fontSize: 12,
+        color: theme.palette.common.white,
     },
     relativePostion: {
         position: 'relative',

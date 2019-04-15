@@ -3,7 +3,7 @@ const moment = require('moment');
 
 const graphSelector = state => state.get('graph')
 const organisationSelector = state => state.get('organisation')
-
+const chartTypeFilterSelector = state => state.get('chartTypeFilter')
 export const selectGraphType = createSelector(
     graphSelector,
     (graph) => {
@@ -22,8 +22,14 @@ export const selectGraphType = createSelector(
 export const selectOrganisation = createSelector(
     organisationSelector,
     (org) => {
-        
         return org.toJS();
+    }
+)
+
+export const selectChartType = createSelector(
+    chartTypeFilterSelector,
+    (ctf) => {
+        return ctf.toJS();
     }
 )
 

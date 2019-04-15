@@ -12,6 +12,7 @@ import { AreaChartGraph } from '../../common/Charts/AreaChart';
 
 import Tabs from '../../common/tabs';
 import EnhancedTable from '../EnhancedTable';
+import ChartTypeFilter from '../ChartTypeFilter';
 
 const styles = theme => ({
     grow: {
@@ -52,12 +53,13 @@ class Dashboard extends React.Component {
     }
 
     render() {
-        const { classes, result, graphData } = this.props;
-        console.log(this.props)
+        const { classes, result, graphData, chartTypeFilter, selectedChartType } = this.props;
         return (
             <div className={classes.root}>
                 <CssBaseline />
+
                 <Header {...this.props} />
+                <ChartTypeFilter chartTypeFilter={chartTypeFilter} selectedChartHandler={selectedChartType} />
                 <div className={classes.margin}>
                     <Grid container spacing={24}>
                         <Grid item xs={6}>
@@ -65,15 +67,22 @@ class Dashboard extends React.Component {
                                 <CardContent>
                                     <Grid container spacing={24}>
                                         <Grid item xs={12}>
-                                            <AreaChartGraph
-                                                classes={classes}
-                                                graph={graphData}
-                                                startDate={(e) => this.props.startDate(e.target.value)}
-                                                endDate={(e) => this.props.endDate(e.target.value)}
-                                                selectGraphType={(e) => this.props.graphType(e.target.value)}
-                                                graphType={this.props.graphType}
-                                                graphTypes={this.props.graphTypes}
-                                            />
+                                            {chartTypeFilter.selected === 'line' ? (
+                                                <AreaChartGraph
+                                                    classes={classes}
+                                                    graph={graphData}
+                                                    startDate={(e) => this.props.startDate(e.target.value)}
+                                                    endDate={(e) => this.props.endDate(e.target.value)}
+                                                    selectGraphType={(e) => this.props.graphType(e.target.value)}
+                                                    graphType={this.props.graphType}
+                                                    graphTypes={this.props.graphTypes}
+                                                />
+                                            ) : null
+                                            }
+                                            {chartTypeFilter.selected === 'bar' ? (
+                                                <div>test</div>
+                                            ) : null
+                                            }
                                         </Grid>
                                         <Grid item xs={12}>
                                             <Tabs />
@@ -93,7 +102,7 @@ class Dashboard extends React.Component {
                     <Grid container spacing={24}>
                         <Grid item xs={12}>
                             <EnhancedTable {...this.props} />
-                    </Grid>
+                        </Grid>
                     </Grid>
                 </div>
 
