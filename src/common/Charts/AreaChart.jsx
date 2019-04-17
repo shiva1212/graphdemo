@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import TextField from '@material-ui/core/TextField';
 import {
-    AreaChart, Area, ReferenceLine, Tooltip, ResponsiveContainer, XAxis, YAxis, CartesianGrid, Legend,
+    AreaChart, Area, Tooltip, ResponsiveContainer, XAxis, YAxis, CartesianGrid,
 } from 'recharts';
 
 import Grid from '@material-ui/core/Grid';
@@ -17,13 +17,12 @@ export const AreaChartGraph = ({
     endDate,
     graphTypes
 }) => {
-    console.log(graph.type)
     return (
         <div>
             <ResponsiveContainer width={'100%'} height={270}>
                 <AreaChart data={graph.data}
                     margin={{ top: 20, right: 30, left: 0, bottom: 0 }}>
-                    <XAxis dataKey="name" tick={{ fontSize: 11 }} />
+                    <XAxis dataKey="name" tick={{ fontSize: 11 }}/>
                     <YAxis tick={{ fontSize: 11 }} />
                     <CartesianGrid strokeDasharray="3 3" />
                     <Tooltip />

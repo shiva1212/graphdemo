@@ -10,13 +10,8 @@ import TablePagination from '@material-ui/core/TablePagination';
 import TableRow from '@material-ui/core/TableRow';
 import TableSortLabel from '@material-ui/core/TableSortLabel';
 import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
 import Paper from '@material-ui/core/Paper';
-import Checkbox from '@material-ui/core/Checkbox';
-import IconButton from '@material-ui/core/IconButton';
 import Tooltip from '@material-ui/core/Tooltip';
-import DeleteIcon from '@material-ui/icons/Delete';
-import FilterListIcon from '@material-ui/icons/FilterList';
 import { lighten } from '@material-ui/core/styles/colorManipulator';
 
 const CustomTableCell = withStyles(theme => ({
@@ -57,17 +52,17 @@ function getSorting(order, orderBy) {
 
 const rows = [
     
-  { id: 'OrganizationName', numeric: false, disablePadding: true, label: 'OrganizationName' },
-  { id: 'PlanCode', numeric: false, disablePadding: true, label: 'PlanCode' },
+  { id: 'OrganizationName',sort: true, numeric: false, disablePadding: true, label: 'Organization Name' },
+  { id: 'PlanCode', numeric: false, disablePadding: true, label: 'Plan Code' },
   { id: 'PBP', numeric: false, disablePadding: true, label: 'PBP' },
   { id: 'Segment', numeric: false, disablePadding: true, label: 'Segment' },
-  { id: 'PlanName', numeric: false, disablePadding: true, label: 'PlanName' },
-  { id:'Product', numeric: false, disablePadding: true, label:'Product'},
-  { id:'PlanType', numeric: false, disablePadding: true, label:'PlanType'},
-  { id:'Region', numeric: false, disablePadding: true, label:'Region'},
-  { id:'County', numeric: false, disablePadding: true, label:'County'},
-  { id: 'NumofStatus', numeric: false, disablePadding: true, label:'NumofStatus'},
-  { id: 'CurrentEnrollees', numeric: false, disablePadding: true, label:'CurrentEnrollees'},
+  { id: 'PlanName', numeric: false, disablePadding: true, label: 'Plan Name' },
+  { id:'Product', sort: true, numeric: false, disablePadding: true, label:'Product'},
+  { id:'PlanType', sort: true, numeric: false, disablePadding: true, label:'Plan Type'},
+  { id:'Region', sort: true, numeric: false, disablePadding: true, label:'Region'},
+  { id:'County', sort: true, numeric: false, disablePadding: true, label:'County'},
+  { id: 'NumofStatus', numeric: false, disablePadding: true, label:'Num of Status'},
+  { id: 'CurrentEnrollees', numeric: false, disablePadding: true, label:'Current Enrollees'},
    
 ];
 
@@ -77,8 +72,7 @@ class EnhancedTableHead extends React.Component {
   };
 
   render() {
-    const { onSelectAllClick, order, orderBy, numSelected, rowCount } = this.props;
-
+    const { order, orderBy } = this.props;
     return (
       <TableHead>
         <TableRow>
@@ -96,9 +90,9 @@ class EnhancedTableHead extends React.Component {
                   enterDelay={300}
                 >
                   <TableSortLabel
-                    active={orderBy === row.id}
+                    active={row.sort === true ? (orderBy === row.id) : false}
                     direction={order}
-                    onClick={this.createSortHandler(row.id)}
+                    onClick={row.sort === true ? this.createSortHandler(row.id): null}
                   >
                     {row.label}
                   </TableSortLabel>
@@ -250,7 +244,7 @@ class EnhancedTable extends React.Component {
 
   render() {
     const { classes, organisationData } = this.props;
-    const { data, order, orderBy, selected, rowsPerPage, page } = this.state;
+    const { order, orderBy, selected, rowsPerPage, page } = this.state;
     const emptyRows = rowsPerPage - Math.min(rowsPerPage, organisationData - page * rowsPerPage);
     return (
       <Paper className={classes.root}>
@@ -260,17 +254,15 @@ class EnhancedTable extends React.Component {
               numSelected={selected.length}
               order={order}
               orderBy={orderBy}
-              onSelectAllClick={this.handleSelectAllClick}
               onRequestSort={this.handleRequestSort}
               rowCount={organisationData.length}
             />
             <TableBody>
               {stableSort(organisationData, getSorting(order, orderBy))
                 .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
-                .map(n => {
-                  const isSelected = this.isSelected(n.id);
+                .map((n, index) => {
                   return (
-                    <TableRow className={classes.row}>
+                    <TableRow className={classes.row} key={index}>
 
                     <TableCell align="right">{n.OrganizationName}</TableCell>
                     <TableCell align="right">{n.PlanCode}</TableCell>

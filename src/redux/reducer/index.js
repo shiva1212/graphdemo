@@ -1,6 +1,6 @@
 import {
     LOAD_DATA_RESPONSE,
-    LOAD_DATA_ERROR, GRAPH_START_DATE,
+    GRAPH_START_DATE,
     GRAPH_END_DATE,
     GRAPH_TYPE,
     LOAD_ORGANISATION_RESPONSE,
@@ -20,7 +20,7 @@ const INITIAL_REDDIT_STATE = Immutable.fromJS({
     },
     chartTypeFilter: {
         types: CHART_TYPES,
-        selected: 'line'
+        selected: 'bar'
     },
     organisation: [],
     result: [1, 2, 3, 4],

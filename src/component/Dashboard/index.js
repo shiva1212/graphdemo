@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import classNames from 'classnames';
 import { withStyles } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { Header } from '../../layout/Header';
@@ -9,7 +8,7 @@ import Grid from '@material-ui/core/Grid';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import { AreaChartGraph } from '../../common/Charts/AreaChart';
-
+import { BarChartGraph } from '../../common/Charts/BarChart';
 import Tabs from '../../common/tabs';
 import EnhancedTable from '../EnhancedTable';
 import ChartTypeFilter from '../ChartTypeFilter';
@@ -44,16 +43,12 @@ const styles = theme => ({
 
 class Dashboard extends React.Component {
 
-    constructor(props) {
-        super(props);
-    }
-
     componentWillMount() {
         this.props.requestData()
     }
 
     render() {
-        const { classes, result, graphData, chartTypeFilter, selectedChartType } = this.props;
+        const { classes, lineData, barData, chartTypeFilter, selectedChartType } = this.props;
         return (
             <div className={classes.root}>
                 <CssBaseline />
@@ -70,7 +65,7 @@ class Dashboard extends React.Component {
                                             {chartTypeFilter.selected === 'line' ? (
                                                 <AreaChartGraph
                                                     classes={classes}
-                                                    graph={graphData}
+                                                    graph={lineData}
                                                     startDate={(e) => this.props.startDate(e.target.value)}
                                                     endDate={(e) => this.props.endDate(e.target.value)}
                                                     selectGraphType={(e) => this.props.graphType(e.target.value)}
@@ -80,7 +75,15 @@ class Dashboard extends React.Component {
                                             ) : null
                                             }
                                             {chartTypeFilter.selected === 'bar' ? (
-                                                <div>test</div>
+                                                <BarChartGraph
+                                                classes={classes}
+                                                graph={barData}
+                                                startDate={(e) => this.props.startDate(e.target.value)}
+                                                endDate={(e) => this.props.endDate(e.target.value)}
+                                                selectGraphType={(e) => this.props.graphType(e.target.value)}
+                                                graphType={this.props.graphType}
+                                                graphTypes={this.props.graphTypes}
+                                            />
                                             ) : null
                                             }
                                         </Grid>

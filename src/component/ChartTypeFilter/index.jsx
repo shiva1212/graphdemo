@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Grid from '@material-ui/core/Grid';
 import classNames from 'classnames';
 import { withStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
@@ -36,9 +35,6 @@ const styles = theme => ({
 
 class ChartTypeFilter extends Component {
 
-    constructor(props) {
-        super(props);
-    }
     render() {
         const { classes, chartTypeFilter, selectedChartHandler } = this.props;
         return (
@@ -55,7 +51,7 @@ class ChartTypeFilter extends Component {
                             selectedChartHandler(e.target.value);
                         })}
                     >
-                        {chartTypeFilter.types.map((item, index) => <MenuItem value={item.id}>{item.label}</MenuItem>)}               
+                        {chartTypeFilter.types.map((item, index) => <MenuItem key={index} value={item.id}>{item.label}</MenuItem>)}               
                     </Select>
 
                 </CardContent>
