@@ -4,10 +4,102 @@ import { LOAD_DATA_RESPONSE, LOAD_ORGANISATION_RESPONSE } from '../action';
 import { API } from '../../api';
 /*
 const uuidv4 = require('uuid/v4');
+const COMPETITORS_TYPE = [
+    {
+        id: 1,
+        label: 'WellCare',
+    },
+    {
+        id: 2,
+        label: 'United HealthCare',
+    },
+    {
+        id: 3,
+        label: 'Humana',
+    },
+    {
+        id: 4,
+        label: 'HealthSpring of Florida',
+    },
+    {
+        id: 5,
+        label: 'Florida Blue',
+    }
+]
+
+
+const PRODUCT_TYPE = [
+    {
+        id: 1,
+        label: 'MAPD',
+    },
+    {
+        id: 2,
+        label: 'MA',
+    },
+    {
+        id: 3,
+        label: 'SNP',
+    },
+    {
+        id: 4,
+        label: 'PDP',
+    },
+    {
+        id: 5,
+        label: 'Product 4',
+    }
+]
+
+const PLAN_TYPE = [
+    {
+        id: 1,
+        label: 'PPO',
+    },
+    {
+        id: 2,
+        label: 'HMO',
+    },
+    {
+        id: 3,
+        label: 'LPPO',
+    },
+    {
+        id: 4,
+        label: 'PDP',
+    },
+    {
+        id: 5,
+        label: 'Plan 4',
+    }
+]
+
+const REGION_TYPE = [
+    {
+        id: 1,
+        label: 'North West',
+    },
+    {
+        id: 2,
+        label: 'North East',
+    },
+    {
+        id: 3,
+        label: 'Central',
+    },
+    {
+        id: 4,
+        label: 'South West',
+    },
+    {
+        id: 4,
+        label: 'South East',
+    }
+]
+
 
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
 const types = ['Career', 'Frequency', 'Medical', 'Hobby', 'Journey'];
-const DIRECTION = ['North', 'East', 'West', 'South'];
 const COUNTY = ['DeSoto', 'HighLands', 'Charlotte', 'Glades', 'Lee', 'Hendry', 'Collier', 'Palm Beach', 'Broward', 'Miami-Dade', 'Monroe'];
 const dummyData = () => {
     let dummyArray = [];
@@ -33,14 +125,14 @@ const dummyData = () => {
                         selected: true
                     },
                     organisation: {
-                        "OrganizationName": "WellCare - "+ (Math.floor(Math.random() * 200)),
+                        "OrganizationName": COMPETITORS_TYPE[Math.floor(Math.random() * COMPETITORS_TYPE.length)].label,
                         "PlanCode":"H"+ (Math.floor(Math.random() * 1000) + 32),
                         "PBP":(Math.floor(Math.random() * 125)),
                         "Segment": (Math.floor(Math.random() * 10)),
                         "PlanName":"WellCare Access (HMO SNP) - "+(Math.floor(Math.random() * 200)),
-                        "Product": "SNP - "+(Math.floor(Math.random() * 200)),
-                        "PlanType": "HMO (SNP) - "+(Math.floor(Math.random() * 200)),
-                        "Region": DIRECTION[(Math.floor(Math.random() * DIRECTION.length))],
+                        "Product": PRODUCT_TYPE[Math.floor(Math.random() * PRODUCT_TYPE.length)].label,
+                        "PlanType": PLAN_TYPE[Math.floor(Math.random() * PLAN_TYPE.length)].label,
+                        "Region": REGION_TYPE[Math.floor(Math.random() * REGION_TYPE.length)].label,
                         "County": county,
                         "NumofStatus":(Math.floor(Math.random() * 100)),
                         "CurentEnrollees": (Math.floor(Math.random() * 100)+ 30) + "k"
@@ -54,7 +146,6 @@ const dummyData = () => {
 const data = dummyData();
 console.log(JSON.stringify(data))
 */
-
 const updateMockDate = (response) => {
     let res  = response.filter(item => {
         const day = new Date(item.rdate).getDay();

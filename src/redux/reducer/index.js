@@ -18,6 +18,12 @@ const INITIAL_REDDIT_STATE = Immutable.fromJS({
         end: '',
         type: 'none'
     },
+    selectedFilter: {
+        org: "none",
+        region: "none",
+        planType: "none",
+        product: "none",
+    },
     chartTypeFilter: {
         types: CHART_TYPES,
         selected: 'bar'

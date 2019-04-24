@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
-import { Header } from '../../layout/Header';
+import FilterSettings from '../../component/FilterSettings';
 import Grid from '@material-ui/core/Grid';
 
 import Card from '@material-ui/core/Card';
@@ -78,13 +78,15 @@ class Dashboard extends React.Component {
     }
 
     render() {
-        const { classes, lineData, barData, chartTypeFilter, selectedChartType } = this.props;
+        const {selectedGlobalFilter, globalFilters, classes, lineData, barData, chartTypeFilter, selectedChartType } = this.props;
         return (
             <div className={classes.root}>
                 <CssBaseline />
 
-                <Header classes={classes} 
-                    showFilters={this.showFilters} 
+                <FilterSettings classes={classes} 
+                    globalFilters={globalFilters}
+                    showFilters={this.showFilters}
+                    selectedGlobalFilter={selectedGlobalFilter} 
                     hideFilters={this.hideFilters}/>
                 <ChartTypeFilter chartTypeFilter={chartTypeFilter} selectedChartHandler={selectedChartType} />
                 <div className={classes.margin}>

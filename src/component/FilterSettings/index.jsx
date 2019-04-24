@@ -11,22 +11,46 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Typography from '@material-ui/core/Typography';
 import TextField from '@material-ui/core/TextField';
 
-const PRODUCT_TYPE = [
+const COMPETITORS_TYPE = [
     {
         id: 1,
-        label: 'Product Type',
+        label: 'WellCare',
     },
     {
         id: 2,
-        label: 'Product 1',
+        label: 'United HealthCare',
     },
     {
         id: 3,
-        label: 'Product 2',
+        label: 'Humana',
     },
     {
         id: 4,
-        label: 'Product 3',
+        label: 'HealthSpring of Florida',
+    },
+    {
+        id: 5,
+        label: 'Florida Blue',
+    }
+]
+
+
+const PRODUCT_TYPE = [
+    {
+        id: 1,
+        label: 'MAPD',
+    },
+    {
+        id: 2,
+        label: 'MA',
+    },
+    {
+        id: 3,
+        label: 'SNP',
+    },
+    {
+        id: 4,
+        label: 'PDP',
     },
     {
         id: 5,
@@ -37,19 +61,19 @@ const PRODUCT_TYPE = [
 const PLAN_TYPE = [
     {
         id: 1,
-        label: 'Plan Type',
+        label: 'PPO',
     },
     {
         id: 2,
-        label: 'Plan 1',
+        label: 'HMO',
     },
     {
         id: 3,
-        label: 'Plan 2',
+        label: 'LPPO',
     },
     {
         id: 4,
-        label: 'Plan 3',
+        label: 'PDP',
     },
     {
         id: 5,
@@ -57,7 +81,30 @@ const PLAN_TYPE = [
     }
 ]
 
-const GRAPH_TYPE = [
+const REGION_TYPE = [
+    {
+        id: 1,
+        label: 'North West',
+    },
+    {
+        id: 2,
+        label: 'North East',
+    },
+    {
+        id: 3,
+        label: 'Central',
+    },
+    {
+        id: 4,
+        label: 'South West',
+    },
+    {
+        id: 4,
+        label: 'South East',
+    }
+]
+
+const GEOGRAPHY_TYPE = [
     {
         id: 1,
         label: 'Geography',
@@ -179,7 +226,7 @@ const styles = theme => ({
         marginBottom: theme.spacing.unit * 1.2
     },
     selectMarginRight: {
-        marginLeft: theme.spacing.unit * 3
+           marginLeft: theme.spacing.unit * 3
     },
     divider: {
         borderRight: '1px solid #cccccc',
@@ -190,13 +237,22 @@ const styles = theme => ({
 class FilterSettings extends React.Component {
 
     state={
+        competitors:1,
+        region:1,
         productType: 1,
-        graphType: 1,
+        geography: 1,
         planType: 1,
         presetType: 1,
     }
     render() {
-        const { classes } = this.props;
+        const { 
+            classes,globalFilters, selectedGlobalFilter } = this.props;
+        const {
+            org,
+            region,
+            planType,
+            product
+        } = globalFilters;
         return(
             <div className={classes.root}>
                 <Divider className={classes.dividerColor}/>
@@ -228,34 +284,52 @@ class FilterSettings extends React.Component {
                         </div>
                         <Select
                             input={<BootstrapInput/>}
-                            value={this.state.productType}
+                            value={selectedGlobalFilter.org}
                         >
-                            <MenuItem value="">
+                            <MenuItem value="none">
                                 <em>None</em>
                             </MenuItem>
-                            {PRODUCT_TYPE.map(item => <MenuItem key={item.id} value={item.id}>{item.label}</MenuItem>)}
+                            {org && org.map(item => <MenuItem key={item} value={item}>{item}</MenuItem>)}
                         </Select>
-
+                        <Select
+                            className={classes.selectMarginRight}
+                            input={<BootstrapInput/>}
+                            value={selectedGlobalFilter.region}
+                        >
+                            <MenuItem value="none">
+                                <em>None</em>
+                            </MenuItem>
+                            {region && region.map(item => <MenuItem key={item} value={item}>{item}</MenuItem>)}
+                        </Select>
+                        <Select
+                            className={classes.selectMarginRight}
+                            input={<BootstrapInput/>}
+                            value={selectedGlobalFilter.product}
+                        >
+                            <MenuItem value="none">
+                                <em>None</em>
+                            </MenuItem>
+                            {product && product.map(item => <MenuItem key={item} value={item}>{item}</MenuItem>)}
+                        </Select>
                         <Select
                         className={classes.selectMarginRight}
                             input={<BootstrapInput/>}
-                            value={this.state.planType}
+                            value={selectedGlobalFilter.planType}
                         >
-                            <MenuItem value="">
+                            <MenuItem value="none">
                                 <em>None</em>
                             </MenuItem>
-                            {PLAN_TYPE.map(item => <MenuItem key={item.id} value={item.id}>{item.label}</MenuItem>)}
+                            {planType && planType.map(item => <MenuItem key={item} value={item}>{item}</MenuItem>)}
                         </Select>
-
                         <Select
                         className={classes.selectMarginRight}
                             input={<BootstrapInput/>}
-                            value={this.state.graphType}
+                            value={this.state.geography}
                         >
                             <MenuItem value="">
                                 <em>None</em>
                             </MenuItem>
-                            {GRAPH_TYPE.map(item => <MenuItem key={item.id} value={item.id}>{item.label}</MenuItem>)}
+                            {GEOGRAPHY_TYPE.map(item => <MenuItem key={item.id} value={item.id}>{item.label}</MenuItem>)}
                         </Select>
                         <div className={classes.button}>
                         <Button variant="contained" color="primary" >
@@ -267,7 +341,6 @@ class FilterSettings extends React.Component {
 
                         <FormControlLabel
                             classes={{
-        
                                     color: '#ffffff'
                               }}
                             labelPlacement="start"
@@ -298,5 +371,4 @@ class FilterSettings extends React.Component {
         )
     }
 }
-
 export default withStyles(styles, { withTheme: true })(FilterSettings);

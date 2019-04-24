@@ -5,6 +5,8 @@ import { startDate, endDate, graphType, selectedChartType } from '../../redux/ac
 import { requestData, requestOrganisationData } from '../../redux/thunk';
 import { selectLineGraph, selectBarGraph, selectGraphType, 
     selectOrganisation,
+    selectGlobalFilters,
+    selectSelectedGlobalFilter,
     selectChartType } from '../../redux/selector';
 const mapStateToProps = (state, ownProps) => {
     return {
@@ -13,6 +15,8 @@ const mapStateToProps = (state, ownProps) => {
         organisationData: selectOrganisation(state),
         graphTypes: selectGraphType(state),
         chartTypeFilter: selectChartType(state),
+        globalFilters: selectGlobalFilters(state),
+        selectedGlobalFilter: selectSelectedGlobalFilter(state),
 
     }
 }

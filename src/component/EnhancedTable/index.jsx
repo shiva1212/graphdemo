@@ -263,7 +263,7 @@ class EnhancedTable extends React.Component {
                 .map((n, index) => {
                   return (
                     <TableRow className={classes.row} key={index}>
-
+                    
                     <TableCell align="right">{n.OrganizationName}</TableCell>
                     <TableCell align="right">{n.PlanCode}</TableCell>
                     <TableCell align="right">{n.PBP}</TableCell>
