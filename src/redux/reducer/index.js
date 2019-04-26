@@ -4,7 +4,8 @@ import {
     GRAPH_END_DATE,
     GRAPH_TYPE,
     LOAD_ORGANISATION_RESPONSE,
-    SELECTED_CHART_TYPE
+    SELECTED_CHART_TYPE,
+    GLOBAL_FILTER
 } from '../action';
 import Immutable from 'immutable';
 
@@ -60,6 +61,10 @@ const reducer = (state = INITIAL_REDDIT_STATE, action) => {
         case SELECTED_CHART_TYPE:
             return state
                 .setIn(['chartTypeFilter', 'selected'], action.chartType)
+
+        case GLOBAL_FILTER:
+            return state
+                .setIn(['selectedFilter', action.atype], action.avalue)
         default:
             return state;
     }

@@ -151,8 +151,10 @@ export const selectChartType = createSelector(
 )
 
 export const selectLineGraph = createSelector(
-    graphSelector,
-    (graph) => {
+    graphSelector, selectSelecterFilter,
+    (graph, selectedFilter) => {
+        let org = selectedFilter.get('org');
+        console.log(org)
         let data = graph.get('data').toJS();
         let startDate = graph.get('start');
         let endDate = graph.get('end');

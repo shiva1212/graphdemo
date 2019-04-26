@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import Dashboard from '../../component/Dashboard';
 
-import { startDate, endDate, graphType, selectedChartType } from '../../redux/action';
+import { startDate, endDate, graphType, selectedChartType, selectGlobalFilter } from '../../redux/action';
 import { requestData, requestOrganisationData } from '../../redux/thunk';
 import { selectLineGraph, selectBarGraph, selectGraphType, 
     selectOrganisation,
@@ -27,7 +27,7 @@ const mapDispatchToProps = {
     endDate,
     graphType,
     selectedChartType,
-    
+    selectGlobalFilter
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Dashboard);

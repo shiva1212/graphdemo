@@ -87,6 +87,7 @@ class Dashboard extends React.Component {
                     globalFilters={globalFilters}
                     showFilters={this.showFilters}
                     selectedGlobalFilter={selectedGlobalFilter} 
+                    globalActionFilter={this.props.selectGlobalFilter}
                     hideFilters={this.hideFilters}/>
                 <ChartTypeFilter chartTypeFilter={chartTypeFilter} selectedChartHandler={selectedChartType} />
                 <div className={classes.margin}>

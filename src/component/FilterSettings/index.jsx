@@ -246,7 +246,7 @@ class FilterSettings extends React.Component {
     }
     render() {
         const { 
-            classes,globalFilters, selectedGlobalFilter } = this.props;
+            classes,globalFilters, selectedGlobalFilter, globalActionFilter } = this.props;
         const {
             org,
             region,
@@ -285,6 +285,9 @@ class FilterSettings extends React.Component {
                         <Select
                             input={<BootstrapInput/>}
                             value={selectedGlobalFilter.org}
+                            onChange={(e) => {
+                                globalActionFilter('org', e.target.value)
+                            }}
                         >
                             <MenuItem value="none">
                                 <em>None</em>
@@ -295,6 +298,9 @@ class FilterSettings extends React.Component {
                             className={classes.selectMarginRight}
                             input={<BootstrapInput/>}
                             value={selectedGlobalFilter.region}
+                            onChange={(e) => {
+                                globalActionFilter('region', e.target.value)
+                            }}
                         >
                             <MenuItem value="none">
                                 <em>None</em>
@@ -305,6 +311,9 @@ class FilterSettings extends React.Component {
                             className={classes.selectMarginRight}
                             input={<BootstrapInput/>}
                             value={selectedGlobalFilter.product}
+                            onChange={(e) => {
+                                globalActionFilter('product', e.target.value)
+                            }}
                         >
                             <MenuItem value="none">
                                 <em>None</em>
@@ -315,6 +324,9 @@ class FilterSettings extends React.Component {
                         className={classes.selectMarginRight}
                             input={<BootstrapInput/>}
                             value={selectedGlobalFilter.planType}
+                            onChange={(e) => {
+                                globalActionFilter('planType', e.target.value)
+                            }}
                         >
                             <MenuItem value="none">
                                 <em>None</em>
