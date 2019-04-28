@@ -20,12 +20,35 @@ export const selectGraphType = createSelector(
 )
 
 export const selectOrganisation = createSelector(
-    graphSelector,
-    (graph) => {
+    graphSelector, selectSelecterFilter,
+    (graph, selectedFilter) => {
         let data = graph.get('data').toJS();
         let startDate = graph.get('start');
         let endDate = graph.get('end');
         let type = graph.get('type');
+
+        let org = selectedFilter.get('org');
+        let region = selectedFilter.get('region');
+        let planType = selectedFilter.get('planType');
+        let product = selectedFilter.get('product');
+
+        if (org !== 'none') {
+            data = data.filter(item => item.organisation && item.organisation.OrganizationName === org);
+        }
+
+        if (region !== 'none') {
+            data = data.filter(item => item.organisation && item.organisation.Region === region);
+        }
+
+        if (planType !== 'none') {
+            data = data.filter(item => item.organisation && item.organisation.PlanType === planType);
+        }
+
+        if (product !== 'none') {
+            data = data.filter(item => item.organisation && item.organisation.Product === product);
+        }
+
+
         if (type !== 'none') {
             data = data.filter(item => item.type === type);
         }
@@ -51,12 +74,37 @@ export const selectOrganisation = createSelector(
 )
 
 export const selectBarGraph = createSelector(
-    graphSelector,
-    (graph) => {
+    graphSelector, selectSelecterFilter,
+    (graph, selectedFilter) => {
+
+        let org = selectedFilter.get('org');
+        let region = selectedFilter.get('region');
+        let planType = selectedFilter.get('planType');
+        let product = selectedFilter.get('product');
+
+
         let data = graph.get('data').toJS();
         let startDate = graph.get('start');
         let endDate = graph.get('end');
         let type = graph.get('type');
+
+
+        if (org !== 'none') {
+            data = data.filter(item => item.organisation && item.organisation.OrganizationName === org);
+        }
+
+        if (region !== 'none') {
+            data = data.filter(item => item.organisation && item.organisation.Region === region);
+        }
+
+        if (planType !== 'none') {
+            data = data.filter(item => item.organisation && item.organisation.PlanType === planType);
+        }
+
+        if (product !== 'none') {
+            data = data.filter(item => item.organisation && item.organisation.Product === product);
+        }
+
         if (type !== 'none') {
             data = data.filter(item => item.type === type);
         }
@@ -154,14 +202,37 @@ export const selectLineGraph = createSelector(
     graphSelector, selectSelecterFilter,
     (graph, selectedFilter) => {
         let org = selectedFilter.get('org');
-        console.log(org)
+        let region = selectedFilter.get('region');
+        let planType = selectedFilter.get('planType');
+        let product = selectedFilter.get('product');
+
+
         let data = graph.get('data').toJS();
         let startDate = graph.get('start');
         let endDate = graph.get('end');
         let type = graph.get('type');
+
+       
+        if (org !== 'none') {
+            data = data.filter(item => item.organisation && item.organisation.OrganizationName === org);
+        }
+
+        if (region !== 'none') {
+            data = data.filter(item => item.organisation && item.organisation.Region === region);
+        }
+
+        if (planType !== 'none') {
+            data = data.filter(item => item.organisation && item.organisation.PlanType === planType);
+        }
+
+        if (product !== 'none') {
+            data = data.filter(item => item.organisation && item.organisation.Product === product);
+        }
+
         if (type !== 'none') {
             data = data.filter(item => item.type === type);
         }
+
         if (startDate) {
 
             data = data.filter(item => {
