@@ -19,40 +19,50 @@ export const selectGraphType = createSelector(
     }
 )
 
+const filterGraph = (graph, selectedFilter) => {
+    let data = graph.get('data').toJS();
+    let type = graph.get('type');
+
+    let org = selectedFilter.get('org');
+    let region = selectedFilter.get('region');
+    let planType = selectedFilter.get('planType');
+    let product = selectedFilter.get('product');
+
+    if (org !== 'none') {
+        data = data.filter(item => item.organisation && item.organisation.OrganizationName === org);
+    }
+
+    if (region !== 'none') {
+        data = data.filter(item => item.organisation && item.organisation.Region === region);
+    }
+
+    if (planType !== 'none') {
+        data = data.filter(item => item.organisation && item.organisation.PlanType === planType);
+    }
+
+    if (product !== 'none') {
+        data = data.filter(item => item.organisation && item.organisation.Product === product);
+    }
+
+
+    if (type !== 'none') {
+        data = data.filter(item => item.type === type);
+    }
+
+
+    return {
+        data, 
+        type
+    }
+}
+
 export const selectOrganisation = createSelector(
     graphSelector, selectSelecterFilter,
     (graph, selectedFilter) => {
-        let data = graph.get('data').toJS();
+        let { data, type } = filterGraph(graph, selectedFilter);
         let startDate = graph.get('start');
         let endDate = graph.get('end');
-        let type = graph.get('type');
-
-        let org = selectedFilter.get('org');
-        let region = selectedFilter.get('region');
-        let planType = selectedFilter.get('planType');
-        let product = selectedFilter.get('product');
-
-        if (org !== 'none') {
-            data = data.filter(item => item.organisation && item.organisation.OrganizationName === org);
-        }
-
-        if (region !== 'none') {
-            data = data.filter(item => item.organisation && item.organisation.Region === region);
-        }
-
-        if (planType !== 'none') {
-            data = data.filter(item => item.organisation && item.organisation.PlanType === planType);
-        }
-
-        if (product !== 'none') {
-            data = data.filter(item => item.organisation && item.organisation.Product === product);
-        }
-
-
-        if (type !== 'none') {
-            data = data.filter(item => item.type === type);
-        }
-
+        
         if (startDate) {
             data = data.filter(item => {
                 const flag = new Date(item.rdate).getTime() >= new Date(moment(startDate).format("MM-DD-YYYY")).getTime();
@@ -77,37 +87,11 @@ export const selectBarGraph = createSelector(
     graphSelector, selectSelecterFilter,
     (graph, selectedFilter) => {
 
-        let org = selectedFilter.get('org');
-        let region = selectedFilter.get('region');
-        let planType = selectedFilter.get('planType');
-        let product = selectedFilter.get('product');
-
-
-        let data = graph.get('data').toJS();
+        let { data, type } = filterGraph(graph, selectedFilter);
         let startDate = graph.get('start');
         let endDate = graph.get('end');
-        let type = graph.get('type');
 
-
-        if (org !== 'none') {
-            data = data.filter(item => item.organisation && item.organisation.OrganizationName === org);
-        }
-
-        if (region !== 'none') {
-            data = data.filter(item => item.organisation && item.organisation.Region === region);
-        }
-
-        if (planType !== 'none') {
-            data = data.filter(item => item.organisation && item.organisation.PlanType === planType);
-        }
-
-        if (product !== 'none') {
-            data = data.filter(item => item.organisation && item.organisation.Product === product);
-        }
-
-        if (type !== 'none') {
-            data = data.filter(item => item.type === type);
-        }
+        
         const MAXIMUM = data.length > 0 && data.reduce(function (p, v) {
             return (p.pv > v.pv ? p : v);
         });
@@ -201,37 +185,10 @@ export const selectChartType = createSelector(
 export const selectLineGraph = createSelector(
     graphSelector, selectSelecterFilter,
     (graph, selectedFilter) => {
-        let org = selectedFilter.get('org');
-        let region = selectedFilter.get('region');
-        let planType = selectedFilter.get('planType');
-        let product = selectedFilter.get('product');
+        let { data, type } = filterGraph(graph, selectedFilter);
 
-
-        let data = graph.get('data').toJS();
         let startDate = graph.get('start');
         let endDate = graph.get('end');
-        let type = graph.get('type');
-
-       
-        if (org !== 'none') {
-            data = data.filter(item => item.organisation && item.organisation.OrganizationName === org);
-        }
-
-        if (region !== 'none') {
-            data = data.filter(item => item.organisation && item.organisation.Region === region);
-        }
-
-        if (planType !== 'none') {
-            data = data.filter(item => item.organisation && item.organisation.PlanType === planType);
-        }
-
-        if (product !== 'none') {
-            data = data.filter(item => item.organisation && item.organisation.Product === product);
-        }
-
-        if (type !== 'none') {
-            data = data.filter(item => item.type === type);
-        }
 
         if (startDate) {
 
