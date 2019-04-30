@@ -27,21 +27,21 @@ const filterGraph = (graph, selectedFilter) => {
     let region = selectedFilter.get('region');
     let planType = selectedFilter.get('planType');
     let product = selectedFilter.get('product');
-
-    if (org !== 'none') {
-        data = data.filter(item => item.organisation && item.organisation.OrganizationName === org);
+    
+    if (org.length > 0) {
+        data = data.filter(item => item.organisation && org.indexOf(item.organisation.OrganizationName) > -1);
     }
 
-    if (region !== 'none') {
-        data = data.filter(item => item.organisation && item.organisation.Region === region);
+    if (region.length > 0) {
+        data = data.filter(item => item.organisation && region.indexOf(item.organisation.Region) > -1);
     }
 
-    if (planType !== 'none') {
-        data = data.filter(item => item.organisation && item.organisation.PlanType === planType);
+    if (planType.length > 0) {
+        data = data.filter(item => item.organisation && planType.indexOf(item.organisation.PlanType) > -1);
     }
 
-    if (product !== 'none') {
-        data = data.filter(item => item.organisation && item.organisation.Product === product);
+    if (product.length > 0) {
+        data = data.filter(item => item.organisation && product.indexOf(item.organisation.Product) > -1);
     }
 
 

@@ -20,10 +20,10 @@ const INITIAL_REDDIT_STATE = Immutable.fromJS({
         type: 'none'
     },
     selectedFilter: {
-        org: "none",
-        region: "none",
-        planType: "none",
-        product: "none",
+        org: [],
+        region: [],
+        planType: [],
+        product: [],
     },
     chartTypeFilter: {
         types: CHART_TYPES,
@@ -63,6 +63,7 @@ const reducer = (state = INITIAL_REDDIT_STATE, action) => {
                 .setIn(['chartTypeFilter', 'selected'], action.chartType)
 
         case GLOBAL_FILTER:
+            console.log(action.avalue)
             return state
                 .setIn(['selectedFilter', action.atype], action.avalue)
         default:
