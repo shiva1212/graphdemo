@@ -63,7 +63,6 @@ const reducer = (state = INITIAL_REDDIT_STATE, action) => {
                 .setIn(['chartTypeFilter', 'selected'], action.chartType)
 
         case GLOBAL_FILTER:
-            console.log(action.avalue)
             return state
                 .setIn(['selectedFilter', action.atype], action.avalue)
         default:

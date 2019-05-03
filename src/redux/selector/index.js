@@ -91,19 +91,11 @@ export const selectBarGraph = createSelector(
         let startDate = graph.get('start');
         let endDate = graph.get('end');
 
-        
-        const MAXIMUM = data.length > 0 && data.reduce(function (p, v) {
-            return (p.pv > v.pv ? p : v);
+        data = data.map((item, index) => {
+            item.name = item.county.name;
+            return item;
         });
 
-        if (MAXIMUM.pv) {
-            const MAXIMUM_VALUE = MAXIMUM.pv;
-            data = data.map((item, index) => {
-                item.name = item.county.name;
-                item.pv = Math.floor((item.pv / MAXIMUM_VALUE) * 100);
-                return item;
-            });
-        }
 
         if (startDate) {
 
@@ -189,6 +181,18 @@ export const selectLineGraph = createSelector(
 
         let startDate = graph.get('start');
         let endDate = graph.get('end');
+
+        const MAXIMUM = data.length > 0 && data.reduce(function (p, v) {
+            return (p.pv > v.pv ? p : v);
+        });
+
+        if (MAXIMUM.pv) {
+            const MAXIMUM_VALUE = MAXIMUM.pv;
+            data = data.map((item, index) => {
+                item.pv = Math.floor((item.pv / MAXIMUM_VALUE) * 100);
+                return item;
+            });
+        }
 
         if (startDate) {
 

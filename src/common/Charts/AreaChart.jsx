@@ -26,8 +26,7 @@ export const AreaChartGraph = ({
                     <YAxis tick={{ fontSize: 11 }} />
                     <CartesianGrid strokeDasharray="3 3" />
                     <Tooltip />
-                    <Area type="monotone" dataKey="amt" stroke="#8884d8" strokeOpacity={0.2} fillOpacity={0.2} fill="#8884d8" />
-                    <Area type="monotone" dataKey="uv" stroke="#82ca9d" strokeOpacity={0.2} fillOpacity={0.2} fill="#82ca9d" />
+                    
                     <Area type="monotone" dataKey="pv" stroke="#986767" strokeOpacity={0.2} fillOpacity={0.2} fill="#986767" />
                 </AreaChart>
             </ResponsiveContainer>
